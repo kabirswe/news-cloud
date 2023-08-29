@@ -1,0 +1,57 @@
+@import '../../scss/variables';
+
+.ncLabel {
+  cursor: pointer;
+  &::before {
+    width: 18px !important;
+    height: 18px !important;
+    top: 0 !important;
+    left: 0 !important;
+    // border-top: 1px solid $mercury !important;
+    // border-bottom: 1px solid $mercury !important;
+    // border-left: 1px solid $iron !important;
+    // border-right: 1px solid $iron !important;
+    // box-shadow: unset !important;
+    border-radius: 3px !important;
+  }
+  &::after {
+    // background: no-repeat 60%/50% 50% !important;
+    width: 18px !important;
+    height: 18px !important;
+    left: 0 !important;
+    top: 0 !important;
+    background: no-repeat 53%/50% 50% !important;
+  }
+}
+.ncCheckbox {
+  padding-left: 0 !important;
+  min-height: 0 !important;
+  input {
+    left: 4px;
+    background: $white;
+    border-radius: 3px;
+    &:checked ~ .ncLabel {
+      &::before {
+        border-color: $medium-blue !important;
+        background-color: $medium-blue !important;
+        width: 20px !important;
+        height: 19px !important;
+        // add custom background if needed for checked state
+      }
+      &::after {
+        background-image: url('../../assets/svg/check-active.svg') !important;
+        width: 20px !important;
+        height: 19px !important;
+      }
+    }
+  }
+  label {
+    padding-left: 0;
+  }
+
+ 
+}
+
+.checkBoxDisabled {
+  cursor: not-allowed;
+}

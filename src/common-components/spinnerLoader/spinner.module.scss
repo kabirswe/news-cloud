@@ -1,0 +1,13 @@
+@import '../../scss/variables';
+.spinnerLoader {
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  right: 12px;
+  top: 8px;
+  img {
+    width: 14px;
+    height: 14px;
+    border: 0;
+  }
+}

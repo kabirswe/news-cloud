@@ -1,0 +1,43 @@
+@import '../../../scss/variables';
+
+.input-box {
+  min-height: 35px;
+  width: 100%;
+  background: $catskill_white;
+  border: 1px solid $iron;
+  border-radius: 5px;
+  color: $abbey;
+  font-style: normal;
+  font-size: 12px;
+  padding: 14.4px;
+  font-family: $notosans;
+
+  &:focus {
+    outline: none !important;
+    border: 1px solid $persian-green;
+    box-shadow: none;
+  }
+}
+
+.right-input-text {
+  text-align: end;
+}
+::-webkit-outer-spin-button,
+::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.error {
+  // border: 1px solid $red;
+  outline: none;
+}
+.disabled {
+  background: $white-smoke !important;
+  border: 1px solid $light-gray;
+
+}
+.inputError {
+  border: 1px solid $red !important;
+  outline: none;
+}

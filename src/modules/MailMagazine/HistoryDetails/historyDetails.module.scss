@@ -1,0 +1,296 @@
+@import '../../../scss/variables';
+@import '../../../scss/mixins';
+
+.mailMagazineComponent {
+  padding: 0px 15px 15px 14px;
+  .pageTitle {
+    @include font_style(16px, $mine-shaft, $medium, 19.2px);
+  }
+  .pageHeading {
+    .mailGroup {
+      font-size: 14px;
+      font-family: $notosanMedium;
+      margin-top: 0px;
+    }
+    margin-bottom: 10px;
+  }
+  .tableWrapper {
+    border-radius: 4px;
+    .makeScroller {
+      height: 200px !important;
+      max-height: 200px !important;
+    }
+  }
+}
+.emailBodyWrapper {
+  border: 1px solid $mercury;
+  border-radius: 7px;
+  font-size: 13px;
+  text-align: center;
+  height: 555px;
+  line-height: 50;
+}
+.addGroupBtn {
+  border: 2px solid $article_link_menu;
+  border-radius: 4px;
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 33px;
+  position: absolute;
+  right: 100px;
+  cursor: pointer;
+  svg {
+    width: 16px;
+    height: 16px;
+    fill: $article_link_menu;
+    color: $white;
+  }
+  span {
+    margin-left: 6px;
+    font-size: 12px;
+    font-family: $notosanMedium;
+  }
+}
+.mailCheckbox {
+  display: flex;
+}
+
+.customBtn {
+  @include font_style(12px, $white, $medium, 14.4px);
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  outline: none;
+  height: 33px;
+  margin-right: 0px;
+  margin-left: 10px;
+  width: 127px !important;
+  &:focus {
+    border: 0px;
+    outline: none;
+  }
+
+}
+.topPadding {
+  position: relative;
+  top: 8px !important;
+}
+
+.customClose {
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border: none;
+  position: absolute;
+  right: -15px;
+  top: -15px;
+  cursor: pointer;
+  &:focus {
+    border: none;
+    outline: none;
+  }
+  svg {
+    width: 30px;
+    height: 30px;
+    width: 30px;
+    height: 30px;
+    background-color: #f8f9fa;
+    border-radius: 999px;
+    background-position: center;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+  }
+}
+.groupInput {
+  display: flex;
+  margin-bottom: 10px;
+  .inputLabel {
+    width: 110px;
+    font-size: 12px;
+    font-family: $notosans;
+  }
+  .input {
+    width: calc(100% - 110px);
+  }
+}
+.commonButton {
+  width: 105px;
+  height: 40px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-family: $notosans;
+  line-height: 16.8px;
+  outline: none !important;
+  &:focus {
+    outline: none;
+    border: 0;
+  }
+}
+.serverResult {
+  font-size: 14px;
+  font-family: $notosans;
+}
+.modalHeader {
+  height: 46px !important;
+  background: $white-smoke1;
+  border-bottom: 0px !important;
+  h5 {
+    font-size: 14px;
+    font-family: $notosanMedium;
+    color: $article_link_menu !important;
+    line-height: 16.8px;
+  }
+  .modal-title {
+    font-size: 14px;
+    font-family: $notosanMedium;
+  }
+}
+
+.paddingTop {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.groupDetailsAddEmailBtn {
+  border: 2px solid $article_link_menu;
+  border-radius: 4px;
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 33px;
+  cursor: pointer;
+  svg {
+    width: 16px;
+    height: 16px;
+    fill: $article_link_menu;
+    color: $white;
+  }
+  span {
+    margin-left: 6px;
+    font-size: 12px;
+    font-family: $notosanMedium;
+  }
+}
+.rightSideMenu {
+  display: flex;
+  margin-top: 24px;
+  margin-bottom: 10px;
+}
+.groupEditSaveBtn {
+  margin-top: 37px;
+}
+.notFoundData {
+  text-align: center;
+  font-size: 14px;
+  font-family: $notosans;
+  margin: 120px auto;
+}
+.buttonLoader {
+  margin-left: 42px !important;
+}
+.groupMailModal {
+  width: 612px !important;
+  height: 330px !important;
+}
+.modalBody {
+  padding-bottom: 0px !important;
+  width: 612px !important;
+  height: 330px !important;
+}
+.modalFooter {
+  border: 0px !important;
+  padding-top: 0px !important;
+  padding-bottom: 25px !important;
+  margin-top: 0px !important;
+  justify-content: center !important;
+}
+.paddingTop {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.emailBody {
+  font-size: 14px;
+  line-height: 16.8px;
+  font-family: $notosans;
+  color: $label_gray;
+  padding: 10px 0px;
+  max-height: 200px;
+  overflow: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(217, 217, 217, 0.8) $white;
+  white-space: pre-wrap;
+  &::-webkit-scrollbar {
+    width: 7px;
+  }
+  &::-ms-scrollbar {
+    width: 7px;
+  }
+  &::-webkit-scrollbar-track {
+    background: $white;
+  }
+  td {
+    vertical-align: middle;
+    height: 43px;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: $scrollbar-bg;
+    opacity: 0.8;
+    border-radius: 10px;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: $scrollbar-bg;
+    opacity: 0.8;
+    border-radius: 10px;
+  }
+}
+.openModalLoder {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+}
+.listArea {
+  position: relative;
+  width: 100%;
+}
+body {
+  padding-right: 0 !important;
+}
+.mailGroup_mailMagazineComponent__eWWAk {
+  padding: 0px 15px;
+}
+.disabledBtn {
+  cursor: not-allowed !important;
+  opacity: 0.3;
+  &:active {
+    pointer-events: none;
+  }
+}
+.deleteBtn{
+  background: $dangerBgColor !important;
+  padding:0px;
+  font-weight: normal;
+  height: 33px !important;
+  width: 105px !important;
+  @include font_style(14px, $white, normal, 16.8px);
+}
+.widthLoader{
+  button{
+    width: 145px !important;
+    opacity: 1 !important;
+  }
+}
+
+.spinLoader{
+  position: relative;
+}

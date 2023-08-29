@@ -1,0 +1,56 @@
+@import '../../../scss/variables';
+@import '../../../scss/mixins';
+.tableWrapper {
+  border-radius: 4px;
+  overflow-x: hidden;
+  .table-responsive {
+    display: block;
+    width: 100%;
+  }
+}
+.table-summary {
+  font-family: Roboto;
+  font-style: normal;
+  @include font_style(12px, $label_gray, normal, 14.4px);
+}
+.invitationBtn {
+  @include font_style(14px, $white, $medium, 16.8px);
+  background-color: $lochmara;
+  width: 93px;
+  height: 33px;
+  margin-top: 15px;
+  margin-right: 0px;
+  margin-left: 10px;
+  outline: none;
+  outline: none !important;
+  &:focus {
+    outline: none;
+    border: 0;
+  }
+}
+
+.disabledBtn {
+  cursor: not-allowed !important;
+  opacity: 0.3;
+  &:active {
+    pointer-events: none;
+  }
+}
+.disabledInput{
+  cursor: not-allowed !important;
+  &:active {
+    pointer-events: none;
+  }
+}
+.invitationBlockBtnArea{
+  margin-top:-60px !important;
+  position: absolute;
+  right: 15px;
+}
+.lockedText{
+  color :$forly;
+}
+.emailColumnWith{
+  min-width: 200px;
+  max-width: 200px;
+}

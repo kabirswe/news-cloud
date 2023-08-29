@@ -1,0 +1,12 @@
+@import '../../scss/variables';
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.label {
+  margin-bottom: 0;
+  font-family: $notosans;
+  font-size: 12px;
+  padding-left: 5px;
+}

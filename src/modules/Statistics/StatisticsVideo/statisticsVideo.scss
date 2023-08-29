@@ -1,0 +1,298 @@
+@import '../../../scss/variables';
+@import '../../../scss/mixins';
+
+.statistics-container-video {
+    padding: 0 30px 0;
+    .tab-button-block {
+        margin-top: 20px;
+        height: 37px;
+        border-bottom: 1px solid #cfcfcf;
+        padding-left: 24px;
+        button {
+            font: none;
+            width: 114px;
+            height: 37px;
+            color: $mine-shaft;
+            background: none;
+            border-radius: 5px 5px 0 0;
+            @include font_style(12px, #008ECD, $medium, 15px);
+            background-color: $white;
+            border: 0;
+            border-bottom: 1px solid #cfcfcf;
+            &.active {
+                border: 1px solid #cfcfcf;
+                border-bottom: 2px solid $white;
+                color: $mine-shaft;
+            }
+            &:first-child {
+                margin-left: 24px;
+            }
+            &:focus {
+                outline: 0;
+            }
+        }
+    }
+    .statistics-container-block {
+        display: none;
+        padding: 20px 0;
+        position: relative;
+        height: calc(100vh - 198px);
+        overflow-y: auto;
+        scrollbar-width: thin;
+        scrollbar-color: rgba(217, 217, 217, 0.8) $white;
+        &.active {
+            display: block;
+        }
+        &::-webkit-scrollbar {
+          width: 7px;
+        }
+        &::-ms-scrollbar {
+          width: 7px;
+        }
+        &::-webkit-scrollbar-track {
+          background: $white;
+        }
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+          background: $scrollbar-bg;
+          opacity: 0.6;
+          border-radius: 10px;
+        }
+        /* Handle on hover */
+        &::-webkit-scrollbar-thumb:hover {
+          background: $scrollbar-bg;
+          opacity: 0.8;
+          border-radius: 10px;
+        }
+        p {
+            margin-bottom: 0;
+            &.pv-digit {
+                @include font_style(20px, #2B2B2B, $regular, 23px);
+                position: relative;
+                &.font-12 {
+                    span {
+                        font-size: 12px;
+                    }
+                }
+                span {
+                    @include font_style(14px, #555555, $regular, 15px);
+                    text-transform: uppercase;
+                    position: relative;
+                    padding-left: 3px;
+                    top: 3px;
+                }
+            }
+            &.digit {
+                @include font_style(14px, #888888, $regular, 15px);
+                border-bottom: 1px solid #D2D2D2;
+                padding: 8px;
+                margin-left: 20px;
+                &.red {
+                    color: #ED5051;
+                    margin-left: 8px;
+                }
+            }
+        }
+        &.tab2 {
+            .statistics-top-block {
+                .left-block {
+                    .view-block, .visitors-block {
+                        height: 163px;
+                    }
+                    .visitors-block {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            .statistics-bottom-block {
+                display: flex;
+                .left-block {
+                    width: calc(50% - 10px);
+                    margin-right: 15px;
+                    height: 338px;
+                }
+                .right-block {
+                    width: calc(50% - 10px);
+                    margin-right: 5px;
+                    height: 338px;
+                }
+            }
+        }
+        .statistics-top-block {
+            margin-bottom: 20px;
+            display: flex;
+            height: 334px;
+            .left-block {
+                width: calc(50% - 10px);
+                margin-right: 15px;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .right-block {
+                width: calc(50% - 10px);
+                margin-right: 5px;
+            }
+        }
+        .statistics-bottom-block {
+            display: flex;
+            .keyword-block {
+                width: 100%;
+                height: 338px;
+                .statistics-block-area {
+                    .statistics-block {
+                        padding: 0;
+                        display: block;
+                        .statistics-error {
+                            height: 100%;
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        .header-block {
+                            height: 43px;
+                            width: 100%;
+                            display: flex;
+                            align-items: center;
+                            background: $white;
+                            border-bottom: 1px solid #E9E9E9;
+                            .sl-no, .video-name, .no-of-views {
+                                @include font_style(12px, #777777, 200, 14px);
+                                width: 140px;
+                                background: $white;
+                                display: flex;
+                                justify-content: flex-start;
+                                align-items: center;
+                            }
+                            .no-of-views {
+                                padding-left: 20px;
+                                height: 100%;
+                                &.rotate {
+                                    svg {
+                                        transform: rotate(180deg);
+                                    }
+                                }
+                                svg {
+                                    margin: -2px 0 0 5px;
+                                    height: 15px;
+                                    width: 15px;
+                                    polyline {
+                                        stroke: #bfbdbd !important;
+                                    }
+                                }
+                                &:hover {
+                                    cursor: pointer;
+                                    background: #E4E4E4;
+                                }
+                            }
+                            .sl-no {
+                                width: 9%;
+                                border-bottom: 0 solid #000;
+                                padding-left: 22px;
+                            }
+                            .video-name {
+                                width: 68%;
+                            }
+                        }
+                        .body-block {
+                            height: 200px;
+                            overflow-y: auto;
+                            scrollbar-width: thin;
+                            scrollbar-color: rgba(217, 217, 217, 0.8) $white;
+                            &.active {
+                                display: block;
+                            }
+                            &::-webkit-scrollbar {
+                              width: 4px;
+                            }
+                            &::-ms-scrollbar {
+                              width: 4px;
+                            }
+                            &::-webkit-scrollbar-track {
+                              background: $white;
+                            }
+                            /* Handle */
+                            &::-webkit-scrollbar-thumb {
+                              background: $scrollbar-bg;
+                              opacity: 0.6;
+                              border-radius: 10px;
+                            }
+                            /* Handle on hover */
+                            &::-webkit-scrollbar-thumb:hover {
+                              background: $scrollbar-bg;
+                              opacity: 0.8;
+                              border-radius: 10px;
+                            }
+                            .block {
+                                height: 37px;
+                                width: 100%;
+                                display: flex;
+                                align-items: center;
+                                background: $white;
+                                border-bottom: 1px solid #E9E9E9;
+                                &:nth-child(odd) {
+                                    background: #F8F8F8;
+                                    .sl-no, .video-name, .visitor, .no-of-views {
+                                        background: #F8F8F8;
+                                    }
+                                }
+                                .sl-no, .video-name, .no-of-views {
+                                    @include font_style(12px, #777777, 200, 14px);
+                                    width: 140px;
+                                    background: $white;
+                                    display: flex;
+                                    justify-content: flex-start;
+                                    align-items: center;
+                                    padding-right: 4px;
+                                    // span {
+                                    //     display: none;
+                                    //     padding-left: 4px;
+                                    //     &.active {
+                                    //         display: block;
+                                    //     }
+                                    // }
+                                }
+                                .sl-no {
+                                    width: 9%;
+                                    border-bottom: 0 solid #000;
+                                    padding-left: 22px;
+                                }
+                                .video-name {
+                                    width: 68%;
+                                }
+                                .no-of-views {
+                                    padding-left: 20px;
+                                }
+                            }
+                        }
+                        .button-block {
+                            border-top: 1px solid #E9E9E9;
+                            height: 57px;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            padding: 0 5px 0 30px;
+                            span {
+                                @include font_style(12px, #8d8d8d, $regular);
+                            }
+                        }
+                    }
+                }
+            }
+            .left-block {
+                width: calc(50% - 10px);
+                margin-right: 15px;
+                height: 338px;
+            }
+            .right-block {
+                width: calc(50% - 10px);
+                margin-right: 5px;
+                height: 338px;
+            }
+        }
+        .statistics-last-block {
+            margin-top: 15px;
+            width: calc(50% - 10px);
+        }
+    }
+}

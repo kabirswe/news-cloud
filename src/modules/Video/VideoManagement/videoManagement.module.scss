@@ -1,0 +1,420 @@
+@import '../../../scss/variables';
+@import '../../../scss/mixins';
+
+.VMContainer {
+  width: 100%;
+  padding: 0 20px 20px;
+  height: 100%;
+  .pageTitle {
+    display: flex;
+    align-items: center;
+    .pageTitleVideo {
+      padding-left: 10px;
+    }
+    .titleInputFocus{
+      width: 169px;
+      height: 34px;
+      font-size: 14px;
+      line-height: 19px;
+      font-family: $notosans;
+      background: $athens-gray;
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid $iron;
+      margin-left: 5px;
+      &:focus {
+        outline:none;
+        box-shadow: unset;
+      }
+    }
+    .titleInput {
+      font-family: $notosans;
+      font-weight: normal;
+      font-size: 16px;
+      color: $mine-shaft;
+      border:none;
+      &:focus {
+        outline:none;
+        box-shadow: unset;
+      }
+    }
+    .titleAttr {
+      margin-left: 10px;
+      font-size: 13px;
+      font-family: $notosans;
+      color: $medium-blue;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      outline: none;
+      cursor: pointer;
+      span {
+        padding-left: 5px;
+      }
+
+    }
+    .rawTitleLeftGap{
+      padding-left: 5px;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      line-height: 24px;
+      max-width: calc(100% - 175px);
+    }
+  }
+  .sectionWrap {
+    width: 100%;
+    padding-left: 5px;
+    padding-top: 20px;
+    .upperSection {
+      width: 100%;
+      height: 341px;
+      background-color: $white-smoke1;
+      .player {
+        width: 585px;
+        padding: 10px;
+        height: 100%;
+        margin: 0 auto;
+      }
+    }
+    .lowerSection {
+      padding-top: 20px;
+      .dataContainer{
+        width: 100%;
+        .videoFormContent {
+          display: flex;
+          justify-content: space-between;
+          border-bottom: 1px solid $alto;
+          padding-bottom: 20px;
+          .colOne {
+            width: 44%;
+            min-height: 500px;
+            padding: 8px 20px 0px 20px;
+            background: $white;
+            margin-left: 2px;
+            @include boxContainerHighlight;
+
+
+            .inputLabel, .privacySettings {
+              font-size: 12px;
+              font-weight: $medium;
+              line-height: 14px;
+              font-family: $notosans;
+              color: $mine-shaft;
+              padding-top: 15px
+            }
+            .privacySettings {
+              color: $medium-blue;
+              font-size: 13px;
+            }
+
+            .commonInput {
+              input {
+                padding: 8px 10px !important;
+              }
+            }
+
+            .commonTextArea {
+              .textArea {
+                resize: none;
+                height: 92px;
+                width: 100%;
+                background: $athens-gray;
+                border: 1px solid #e2e2e2;
+                color: #4a4c51;
+                border-radius: 5px;
+                padding: 11px 11px 11px 15px;
+                font-style: normal;
+                font-size: 12px;
+                font-family: $notosans;
+              }
+
+              textarea:disabled {
+                background: $white-smoke !important;
+              }
+            }
+          }
+
+          .colTwo, .colThree {
+            width: 26%;
+
+            .commonSection {
+              @include boxContainerHighlight;
+
+              .commonSectionHeader {
+                padding: 15px 20px;
+                background: $white-smoke1;
+                border-bottom: 2px solid $mercury-solid;
+
+                span {
+                  font-weight: $medium;
+                  font-size: 13px;
+                  line-height: 15px;
+                  color: $medium-blue;
+                  font-family: $notosans;
+                }
+              }
+
+              .commonSectionBody {
+                padding: 15px 20px;
+
+                .commonSectionBodyUpper {
+                  border-bottom: 1px solid $alto;
+                  .item, .dateItem{
+                    margin-bottom: 20px;
+                    font-weight: normal;
+                    font-size: 12px;
+                    color: $mine-shaft;
+                    font-family: $notosans;
+
+                    span {
+                      color: $label_gray;
+                    }
+                  }
+                  .dateSection {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 20px;
+                    .dateItemTitle {
+                      width: 40%;
+                      span {
+                        font-weight: $medium;
+                      }
+
+                    }
+                    .dateTime {
+                      display: flex;
+                      .dateInput {
+                        font-family: $notosans;
+                        font-weight: normal;
+                        font-size: 11px;
+                        color: $gray;
+                        padding: 8px;
+                        border-radius: 2px;
+                        border: 1px solid $iron;
+                        background: $athens-gray;
+                        background-image: url($calendar-sharp);
+                        background-size: 16px 16px;
+                        background-repeat: no-repeat;
+                        background-position: 95%;
+                        width: 100%;
+                      }
+
+                      .timeInput {
+                        margin-left: 10px;
+                        input {
+                          border-radius: 2px;
+                          border: 1px solid $iron;
+                          width: 100%;
+                          padding: 4px;
+                          text-align: center;
+                          color: $gray;
+                          background: $athens-gray;
+                          min-height: 34px;
+                          font-family: $notosans;
+                          font-weight: normal;
+                          font-size: 11px;
+                        }
+                      }
+                    }
+                  }
+                  .item {
+                    font-weight: $medium;
+                    span {
+                      font-weight: normal;
+                    }
+                  }
+                }
+
+                .commonSectionBodyLower {
+                  display: flex;
+                  justify-content: space-between;
+                  padding-top: 5px;
+
+                  span {
+                    font-weight: $medium;
+                    font-size: 12px;
+                    color: $mine-shaft;
+                    font-family: $notosans;
+                  }
+                }
+
+                textarea {
+                  resize: none;
+                  padding: 10px;
+                  font-style: normal;
+                  font-size: 12px;
+                  font-family: $notosans;
+                  width: 100%;
+                  border: 1px solid $light-gray;
+                  min-height: 124px;
+                  color: $label_gray;
+                }
+
+                .imageContent {
+                  width: 100%;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  background: $gallery;
+                  min-height: 124px;
+                  margin-bottom: 20px;
+                  span {
+                    color: $label_gray;
+                    font-style: normal;
+                    font-size: 12px;
+                    font-family: $notosans;
+                  }
+                  img {
+                    width: 100%;
+                    height: 124px;
+                    border-top-left-radius: 5px;
+                    border-top-right-radius: 5px;
+                    object-fit: cover;
+                  }
+                }
+              }
+
+              .commonButton {
+                .primary {
+                  @include commonSubmitButton;
+                }
+                .danger {
+                  @include commonDangerButton;
+                }
+                button {
+                  border-radius: 4px;
+                }
+                .icon {
+                  width: 18px;
+                  height: 15px;
+                  @include svgAllSectionColorStroke;
+                }
+              }
+
+            }
+          }
+
+          .colThree {
+            margin-right: 2px;
+          }
+        }
+        .videoBtnContent {
+          display: flex;
+          justify-content: flex-end;
+          padding-top: 20px;
+          margin-bottom: 20px;
+          .commonButton {
+            button {
+              border-radius: 4px;
+              padding: 0 20px !important;
+            }
+            .icon {
+              width: 20px;
+              height: 16px;
+              @include svgAllSectionColorStroke;
+            }
+          }
+        }
+      }
+
+    }
+  }
+  .error {
+      border: 1px solid $red !important;
+      outline: none;
+      //color: $red;
+  }
+}
+.customMargin {
+  margin-top: 13px;
+}
+.customMarginLeft {
+  margin-left: 13px;
+}
+
+.svgIcon {
+  width: 14px;
+  height: 14px;
+  @include svgAllSectionColorStroke($medium-blue);
+}
+
+.selectBoxCat {
+  .reactSelectContainer {
+    font-family: $notosans;
+    font-weight: normal;
+    font-size: 11px;
+    color: $abbey;
+    :global {
+      .css-yk16xz-control{
+        background: $athens-gray;
+        border-radius: 4px;
+        border: 1px solid $iron;
+        outline: unset;
+        .css-1okebmr-indicatorSeparator {
+          width: 0px;
+        }
+        .css-tlfecz-indicatorContainer {
+          outline: unset;
+        }
+      }
+      .css-1fhf3k1-control {
+        background: $white-smoke !important;
+        border: 1px solid $light-gray;
+        .css-107lb6w-singleValue {
+          color: $abbey;
+        }
+      }
+    }
+
+  }
+  .errorSelect {
+    :global {
+      .css-yk16xz-control {
+        border: 1px solid $red;
+      }
+    }
+  }
+}
+.commonTextAreaTag {
+  :global {
+    .react-tagsinput {
+      overflow-y: scroll;
+      resize: none;
+      height: 92px;
+      width: 100%;
+      background: $athens-gray;
+      border: 1px solid #e2e2e2;
+      color: #4a4c51;
+      border-radius: 5px;
+      padding: 11px 11px 11px 15px;
+      font-style: normal;
+      font-size: 12px;
+      font-family: $notosans;
+      .react-tagsinput-tag{
+        background-color: $gray;
+        border-radius: 2px;
+        border: 1px solid $gray;
+        color: white;
+        font-size: 11px;
+        padding-top:1px;
+      }
+      .react-tagsinput-input {
+        width: 100% !important;
+      }
+    }
+
+  }
+
+}
+.commonTextAreaTagDisable {
+  :global {
+    .react-tagsinput {
+      background: $white-smoke !important;
+    }
+  }
+}
+
+
+

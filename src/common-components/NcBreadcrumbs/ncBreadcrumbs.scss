@@ -1,0 +1,31 @@
+@import '../../scss/variables';
+@import '../../scss/mixins';
+
+.ncBreadcrumb {
+    padding-left: 0px;
+    .breadcrumb {
+        padding-left: 0px;
+        background-color: $white;
+        margin: 0;
+        padding-bottom: 18px;
+        a{
+          &:hover {
+              cursor: pointer;
+          }
+        }
+        .breadcrumb-item {
+            @include font_style(12px,$medium-blue);
+            text-decoration: none;
+        }
+        .active {
+            color: $label_gray;
+        }
+        .breadcrumb-item+.breadcrumb-item::before {
+            content: url('../../assets/svg/breadcrumb-chevron-forward-outline.svg');
+            padding-right: 8px;
+        }
+        .breadcrumb-item+.breadcrumb-item {
+            padding-left: 17px;
+        }
+    }
+}

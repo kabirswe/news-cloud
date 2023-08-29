@@ -1,0 +1,1 @@
+module.exports = ['Media', 'RolePermission', 'Sns','StatisticsSetting']

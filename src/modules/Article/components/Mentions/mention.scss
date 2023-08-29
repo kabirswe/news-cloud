@@ -1,0 +1,56 @@
+@import '../../../../scss/variables';
+@import '../../../../scss/mixins';
+.custom-mention-box {
+  z-index: 2;
+  display: block;
+.mention-select {
+    position: absolute;
+ //   z-index: -1;
+    width: 200px;
+    display: none;
+  }
+  .mention-custom-select {
+    .mention__control {
+      border: none;
+      border-bottom: none;
+      border-radius: 0;
+      display: none;
+    }
+    .mention__menu {
+      border-radius: 0;
+      margin-top: 15px;
+      border: none;
+      box-shadow: none;
+    }
+    .mention__menu-list,.mention__single-value {
+      font-family: $notosans;
+      font-size: 12px;
+      color: $label_gray;
+    }
+    .css-1okebmr-indicatorSeparator {
+      display: none;
+    }
+    .mention__indicator.mention__dropdown-indicator {
+      display: none;
+    }
+  }
+  textarea {
+    position: relative;
+    width: 100%;
+    min-height: 100px;
+    resize: none;
+    @include inputPlaceholderBrowserSupport;
+  }
+
+  .post-comment {
+    float: right;
+    height: 30px;
+    width: 120px;
+    position: relative;
+    bottom: 5px;
+    margin-bottom: 20px;
+  }
+  .mention-box-padding{
+    padding: 10px 14.1px;
+  }
+}

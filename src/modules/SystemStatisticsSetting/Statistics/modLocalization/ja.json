@@ -1,0 +1,40 @@
+{
+    "translation": {
+      "STATISTICS":{
+        "GOOGLE_ANALYTIC": "Google Analytics",
+        "GOOGLE_SEARCH_CONSOLE": "Google Search Console",
+        "YOUTUBE_CLIENT_ID": "Client ID",
+        "YOUTUBE_CLIENT_SECRET": "Client Secret",
+        "TWITTER_ACCESS_TOKEN": "Access token",
+        "LOCATION_SETTINGS_TITLE": "動画プラットフォーム",
+        "BUTTON_TEXT": "保存",
+        "YOUTUBE_CLIENT_ID_PLACEHOLDER":"クライアントIDを入力してください",
+        "YOUTUBE_CLIENT_SECRETE_PLACEHOLDER":"クライアントシークレットを入力してください",
+        "GOOGLE_ANALYTIC_EMAIL_PLACEHOLDER":"クライアントのメールアドレスを入力してください",
+        "VIMEO_CLIENT_ID_PLACEHOLDER":"クライアントIDを入力してください",
+        "VIMEO_CLIENT_SECRET_PLACEHOLDER":"クライアントシークレットを入力してください",
+        "VIMEO_ACCESS_TOKEN_PLACEHOLDER":"アクセストークンを入力してください",
+        "BREADCRUMB_TITLE":"統計認証設定",
+        "SYSTEM_SETTING":"システム設定",
+        "CLIENT_EMAIL":"Client Email",
+        "SNS_ERROR_MSG": {
+          "FACEBOOK_APP_ID": "アプリIDフィールドは必須です。",
+          "FACEBOOK_APP_SECRET": "アプリシークレットフィールドは必須です。",
+          "LINE_CHANNEL_ID": "チャンネルIDフィールドは必須です。",
+          "LINE_CHANNEL_SECRET": "チャンネルシークレットフィールドは必須です。",
+          "TWITTER_API_KEY": " クライアントAPIキーフィールドは必須です。",
+          "TWITTER_ACCESS_TOKEN": "クライアントアクセストークンフィールドは必須です。",
+          "TWITTER_TOKEN_SECRET": " クライアントトークンシークレットフィールドは必須です。",
+          "YOUTUBE_CLIENT_ID": " クライアントIDフィールドは必須です。",
+          "YOUTUBE_CLIENT_SECRET": "クライアントシークレットフィールドは必須です。",
+          "VIEMO_CLIENT_ID": "クライアントIDフィールドは必須です。",
+          "VIEMO_CLIENT_SECRET": " クライアントシークレットフィールドは必須です。",
+          "VIMEO_ACCESS_TOKEN": "アクセストークンフィールドは必須です。",
+          "INPUT_ERROR" : "少なくとも1つの入力を入力してください。",
+          "GOOGLE_ANALYTIC_CLIENT_ERROR":"クライアントのメールフィールドは必須です。"
+        }
+      }
+      
+    }
+  }
+  

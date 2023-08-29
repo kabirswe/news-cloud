@@ -1,0 +1,73 @@
+{
+  "translation": {
+    "MAIL_MAGAZINE": {
+      "HISTORY": {
+        "PAGE_TITLE": "メール配信履歴",
+        "GROUP_NAME": "グループ名",
+        "DELIVERY_DATE": "配信日",
+        "DELIVERED": "配信数",
+        "ALREADY_READ": "既読",
+        "UNREAD": "未読",
+        "GROUP_NAME_FIELD":"会員グループC",
+        "DELIVER_ERROR":"配信エラー",
+        "READ_RATE":"既読率"
+           
+  },
+      "HISTORY_DETAILS": {
+        "PAGE_TITLE": "会員グループCの履歴",
+        "FULL_NAME": "氏名",
+        "MAIL_ADDRESS": "メールアドレス",
+        "SITUATION": "状況",
+        "CSV_UPLOAD":"CSV ダウンロード",
+        "STATUS":"配信状況",
+        "OPEING_STATUS":"開封状況"
+      },
+      "GROUP": {
+        "PAGE_TITLE": "メールグループ",
+        "ADD_GROUP":"グループ追加",
+        "ADD_MODAL_TITLE":"グループ名",
+        "SUB_PAGE_TITLE":"グループ一覧",
+        "GROUP_NAME":"グループ名",
+        "COMMENT":"コメント",
+        "SAVE":"保存",
+        "CANCEL":"キャンセル",
+        "GROUP_NAME_ERROR":"グループ名フィールドは必須です",
+        "COMMENT_ERROR":"コメント欄は必須です",
+        "NUMBER":"件数",
+        "CONFRIM_DELETE":"削除",
+        "CONFIRM_DELETE_MSG":"このアイテムを削除してもよろしいですか？",
+        "SELECETION_ERROR":"グループを選択してください",
+        "DATA_NOT_FOUND":"データが見つかりませんでした。",
+        "WHITE_SPACE_ERROR":"空白は許可されていません",
+        "INVALID_NAME":" グループ名への入力値が不正です。",
+        "INVALID_COMMENT":" コメントへの入力値が不正です。"
+      },
+      "GROUP_DETAILS": {
+        "PAGE_TITLE": "会員グループD",
+        "GROUP_NAME":"グループ名",
+        "COMMENT":"コメント",
+        "EDIT":"編集",
+        "EMAIL_BTN":"E-mail 追加",
+        "CSV_UPLOAD":"CSV アップロード",
+        "CSV_DOWNLOAD":"CSV ダウンロード",
+        "DELETE":"削除",
+        "ADD_NEW_PEOPLE" :"E-mail 追加",
+        "EMAIL":"メールアドレス",
+        "COMPANY_NAME" : "会社名",
+        "DEPARTMENT_NAME":"部署名",
+        "SAVE":"保存",
+        "CANCEL" :"キャンセル",
+        "MAIL_ADDRESS":"メールアドレス",
+        "FULL_NAME":"氏名",
+        "FULL_NAME_ERROR_MSG":"氏名フィールドは必須です",
+        "EMAIL_ERROR_MSG":" メールフィールドは必須です",
+        "DEPARTMENT_ERROR_MSG":"部署名欄は必須です",
+        "COMPANY_ERROR_MSG":"会社名フィールドは必須で ",
+        "INVALID_FULL_NAME":" 氏名への入力値が不正です。",
+        "INVALID_EMAIL":" メールアドレスへの入力値が不正です。",
+        "INVALID_COMPANY_NAME":" 会社名への入力値が不正です。",
+        "INVALID_DEPARTMENT_NAME":" 部署名への入力値が不正です。"
+      }
+    }
+  }
+}

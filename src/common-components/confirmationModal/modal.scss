@@ -1,0 +1,138 @@
+@import '../../scss/variables';
+@import '../../scss/_mixins';
+.common-cancel-modal-container {
+  .modal-content {
+    height: auto !important;
+    width: 472px;
+    border-radius: 5px;
+    border: 0;
+    top: 220px;
+    padding-bottom: 20px;
+  }
+
+  .modal-header {
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 14px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border-bottom: none;
+    border-radius: 5px;
+    background: $white-smoke1;
+
+    .close {
+      display: none;
+    }
+  }
+
+  .modal-title {
+    font-size: 14px;
+    font-family: $notosanMedium;
+    line-height: 16.8px;
+    color: $lochmara;
+    font-weight: normal;
+  }
+
+  .modal-footer {
+    padding: 0;
+    border-top: none;
+
+    .button-group {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      padding-right: 10px;
+      .button-content {
+        width: 105px;
+        height: 40px;
+        .btnShape {
+          border-radius: 5px;
+          line-height: 170%;
+          font-size: 14px;
+          font-family: $notosans;
+        }
+      }
+      .right {
+        margin-left: 10px;
+        button {
+          background-color: $forly;
+          border: 1px solid $forly;
+          @include commonDangerButton;
+        }
+      }
+    }
+  }
+
+  .modal-body {
+    background: $white;
+    position: unset;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    flex: 0 1 auto;
+    padding: 20px 19px 40px !important;
+
+    .message-conatiner {
+      width: 100% !important;
+      height: auto !important;
+      display: flex;
+
+      .text-container {
+        display: flex;
+        justify-content: flex-start;
+        font-size: 14px;
+        line-height: 30px;
+        font-family: $notosans;
+        letter-spacing: 0.5px;
+        font-weight: normal !important;
+        color: $label_gray !important ;
+      }
+    }
+    .message-conatiner-multiple {
+      width: 100% !important;
+      height: auto !important;
+      display: block;
+      .message-multiple-line {
+        display: block;
+        font-size: 14px;
+        line-height: 30px;
+        font-family: $notosans;
+        letter-spacing: 0.5px;
+        font-weight: normal !important;
+        color: $label_gray !important ;
+      }
+      .top-gap {
+        padding-top: 20px;
+      }
+    }
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+    scrollbar-width: none;
+  }
+  .customClose {
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    cursor: pointer;
+    &:focus {
+      border: none;
+      outline: none;
+    }
+    svg {
+      width: 30px;
+      height: 30px;
+      background-color: #f8f9fa;
+      border-radius: 999px;
+      background-position: center;
+      background-size: 20px 20px;
+      background-repeat: no-repeat;
+    }
+  }
+}

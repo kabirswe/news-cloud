@@ -1,0 +1,157 @@
+@import 'src/scss/variables';
+@import 'src/scss/mixins';
+
+.container {
+  margin-top: 27px;
+  // min-height: 278px;
+  padding: 30px 0;
+  width: 100%;
+  align-items: center;
+  background-color: $background-gray;
+  padding-left: 77px;
+}
+.header {
+  margin-left: -15px;
+}
+.userProfileContainer,
+.memberFormComponent {
+  margin-top: 32px;
+  margin-left: 30px;
+}
+.memberFormComponent {
+  margin-top: 0;
+  margin-left: 30px;
+  :global {
+    .profilePasswordStrength {
+      margin-top: 3px;
+      .progress {
+        margin-left: 172px;
+        width: 39.8vw;
+      }
+    }
+  }
+  .deleteText {
+    display: flex;
+    font-size: 12px !important;
+    align-items: center;
+    justify-content: space-between;
+    width: 336px;
+    margin-left: 10px;
+    input {
+      margin-right: 10px !important;
+    }
+    .custom-control-label {
+      padding-left: 30px;
+      margin-left: 10px;
+    }
+    span {
+      margin-top: 2px;
+      color: $gray;
+      font-size: 12px;
+      margin-left: 20px;
+      letter-spacing: 0.3px;
+    }
+  }
+}
+
+.profileInputField {
+  width: 563px;
+  height: 32px;
+  border-radius: 4px;
+  margin-bottom: 14px;
+  font-family: $notosans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+  color: $label_gray;
+  border: 1px solid $iron;
+  padding: 0 14px;
+  margin-left: 25px;
+  &:focus {
+    box-shadow: none;
+    border: none;
+    outline: none;
+    border: 1px solid $iron;
+  }
+  @include inputPlaceholderBrowserSupport;
+}
+
+::-webkit-outer-spin-button,
+::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.hasFormError {
+  border: 1px solid $red;
+  &:focus {
+    box-shadow: none;
+    outline: none;
+    border: 1px solid $red !important;
+  }
+}
+
+.helperText {
+  color: $red;
+  margin-left: 174px;
+  padding-bottom: 10px;
+  margin-top: -8px;
+  font-size: 13px;
+}
+.requiredMessage {
+  margin-left: 25px;
+}
+
+.profileLabel {
+  margin-bottom: 24px;
+  width: 161px;
+  font-size: 13px;
+  line-height: 15px;
+  color: $label_gray;
+  font-family: $notosans;
+}
+
+.requiredLevel {
+  color: $red;
+}
+
+.profileButton {
+  margin-left: 25px;
+  button {
+    border-radius: 5px;
+    width: 86.99px;
+    @include font_style(14px, null, $medium, 16.8px);
+  }
+}
+.profileButtonDelete {
+  margin-left: 10px;
+  button {
+    border-radius: 5px;
+    width: 86.99px;
+    height: 33px;
+    @include font_style(14px, null, $medium, 16.8px);
+  }
+}
+
+.labelPadding {
+  padding-left: 82px !important;
+}
+
+
+.profileImage {
+  margin-top: -70px;
+  padding: 10px;
+  height: 140px;
+  width: 140px;
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.hiddenInputFile {
+  visibility: hidden;
+}
+

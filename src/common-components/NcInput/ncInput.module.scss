@@ -1,0 +1,42 @@
+@import '../../scss/variables';
+@import '../../scss/mixins';
+
+.ncInput {
+  &.leftLabel {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    .commonLabel {
+      width: 186px;
+      margin: 0;
+    }
+  }
+  .commonLabel{
+    // font-family: $notosans;
+    margin-top: 11px;
+    margin-bottom: 10px;
+    @include font_style(13px,$gray,null,15px)
+  }
+  input {
+    font-family: $notosans;
+    border: 1px solid $iron;
+    border-radius: 4px;
+    height: 35px;
+    background: $catskill_white;
+    @include font_style(12px,$abbey);
+    padding: 14.4px;
+    &:focus {
+      outline: none !important;
+      border: 1px solid $persian-green;
+      box-shadow: none;
+    }
+    &:disabled {
+      cursor: not-allowed;
+      background: $white-smoke !important;
+    }
+    @include inputPlaceholderBrowserSupport;
+  }
+  .requiredMsg {
+    width: 100%;
+  }
+}

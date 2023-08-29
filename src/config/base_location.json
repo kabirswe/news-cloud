@@ -1,0 +1,7 @@
+{
+  "base_url": "https://svc-bo-staging-spw.asd-int.fr",
+  "base_ip": "svc-bo-staging-spw.asd-int.fr",
+  "api_base_url": "https://svc-bo-staging-spw.asd-int.fr",
+  "api_base_ip": "svc-bo-staging-spw.asd-int.fr",
+  "s3_image_link": "https://s3.amazonaws.com/"
+}

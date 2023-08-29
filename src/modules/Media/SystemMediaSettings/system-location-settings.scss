@@ -1,0 +1,100 @@
+@import '../../../scss/variables';
+@import '../../../scss/mixins';
+
+.location-container {
+    display: grid;
+    width: 100%;
+    padding: 0px 30px 0px 30px;
+    margin-bottom: 32px;
+    .title {
+        font-family: $notosans;
+        font-style: normal;
+        @include font_style(16px, $mine-shaft, $medium, 19.2px);
+        margin-bottom: 22px;
+    }
+    .youtube-section,
+    .vimeo-section {
+        width: 100%;
+        .input-container {
+            width: 100%;
+            min-height: 136px;
+            background: $background-gray;
+            padding: 30px 29px 30px 32px;
+            .input-content {
+                display: flex;
+                width: 100%;
+                display: flex;
+                margin-bottom: 12px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                label {
+                    font-family: $notosans;
+                    font-style: normal;
+                    @include font_style(13px, $label_gray, normal, 15px);
+                    width: 185px;
+                    padding-top:7px;
+                }
+                .user-input {
+                    width: 100%;
+                    label {
+                        padding-top: 7px;
+                    }
+                    .input-div {
+                        width: 100%;
+                    }
+                    input {
+                        height: 32px;
+                        min-height: 32px;
+                        background: $white;
+                        @include font_style(12px, $label_gray,normal);
+                    }
+                }
+            }
+        }
+        .top-head {
+            margin-bottom: 2px;
+            background: $white-smoke_gray;
+            min-height: 38px;
+            display: flex;
+            align-items: center;
+            padding: 0px 0px 0px 13px;
+            border-radius: 4px 4px 0 0;
+            .custom-checkbox {
+                padding-top: 6px;
+            }
+            .vimeo-icon,
+            .youtube-icon {
+                margin-left: 26px;
+            }
+            .head-title {
+                font-family: $notosans;
+                font-style: normal;
+                @include font_style(14px, $mine-shaft, $medium, 16px);
+                margin-left: 11px;
+            }
+        }
+    }
+    .vimeo-section {
+        margin-top: 27px;
+        .input-container {
+            border-radius: 0 0 4px 4px;
+            .input-content {
+                .user-input {
+                    input {
+                        background: $white;
+                    }
+                } 
+            }
+        }
+    }
+    .submit-button {
+        margin-top: 14px;
+        display: flex;
+        justify-content: flex-end;
+        button {
+            width: 93px;
+            @include font_style(14px, $white, $medium, 16.8px);
+        }
+    }
+}

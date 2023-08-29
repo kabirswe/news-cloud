@@ -1,0 +1,52 @@
+{
+    "translation": {
+      "SNS": {
+        "SNS_SETTINGS_TITLE": "SNS設定",
+        "FACEBOOK_TITLE": "Facebook",
+        "TWITTER_TITLE": "Twitter",
+        "LINE_TITLE": "Line",
+        "TWITTER_CLIENT_API_INPT": "Client API key",
+        "TWITTER_ACCESS_TOKEN": "Access token",
+        "TWITTER_ACCESS_TOKEN_SECRET": "Access token secret",
+        "LINE_CHANNEL_ID": "Channel ID",
+        "LINE_CHANNEL_SECRET": "Channel secret",
+        "INPUT_LABEL_FACEBOOK": "App ID",
+        "INPUT_LABEL_FACEBOOK_SECRET": "App Secret",
+        "FACEBOOK_APP_ACCESS_TOKEN": "App Access Token",
+        "TWITTER_APP_SECRET": "App Secret",
+        "LINE_CHANNEL_ACCESS_TOKEN": "Channel Access Token",
+        "BUTTON_TEXT": "保存",
+        "FACEBOOK_APP_ID_PLACEHOLDER":"アプリIDを入力してください",
+        "FACEBOOK_APP_SECRETE_PLACEHOLDER":"アプリの秘密を入力してください",
+        "FACEBOOK_APP_ACCESS_TOKEN_PLACEHOLDER":"アプリアクセストークン",
+        "TWITTER_API_KEY_PLACEHOLDER":"APIキーを入力",
+        "TWITTER_APP_SECRET_PLACEHOLDER":"アプリの秘密",
+        "TWITTER_ACCESS_TOKEN_PLACEHOLDER":"アクセストークンを入力してください",
+        "TWITTER_ACCESS_TOKEN_SECRET_PLACEHOLDER":"アクセストークンシークレットを入力してください",
+        "LINE_CHANNEL_ID_PLACEHOLDER":"チャンネルIDを入力してください",
+        "LINE_CHANNEL_SECRET_PLACEHOLDER":"チャンネルシークレットを入力してください",
+        "LINE_CHANNEL_ACCESS_TOKEN_PLACEHOLDER":"チャネルアクセストークン",
+        "BREAD_CRUBMS_TITLE":"API認証設定",
+        "SYSTEM_SETTING":"システム設定",
+
+        "SNS_ERROR_MSG": {
+          "FACEBOOK_APP_ID": "アプリIDフィールドは必須です。",
+          "FACEBOOK_APP_SECRET": "アプリシークレットフィールドは必須です。",
+          "FACEBOOK_APP_ACCESS_TOKEN": "アプリアクセストークンが必要です。",
+          "LINE_CHANNEL_ID": "チャンネルIDフィールドは必須です。",
+          "LINE_CHANNEL_SECRET": "チャンネルシークレットフィールドは必須です。",
+          "LINE_HANNEL_ACCESS_TOKEN": "チャネルアクセストークンが必要です。",
+          "TWITTER_API_KEY": " クライアントAPIキーフィールドは必須です。",
+          "TWITTER_APP_SECRET": " プリシークレットが必要です。",
+          "TWITTER_ACCESS_TOKEN": "クライアントアクセストークンフィールドは必須です。",
+          "TWITTER_TOKEN_SECRET": " クライアントトークンシークレットフィールドは必須です。",
+          "YOUTUBE_CLIENT_ID": " クライアントIDフィールドは必須です。",
+          "YOUTUBE_CLIENT_SECRET": "クライアントシークレットフィールドは必須です。",
+          "VIEMO_CLIENT_ID": "クライアントIDフィールドは必須です。",
+          "VIEMO_CLIENT_SECRET": " クライアントシークレットフィールドは必須です。",
+          "VIMEO_ACCESS_TOKEN": "アクセストークンフィールドは必須です。",
+          "INPUT_ERROR" : "少なくとも1つの入力を入力してください。"
+        }
+      }
+    }
+  }

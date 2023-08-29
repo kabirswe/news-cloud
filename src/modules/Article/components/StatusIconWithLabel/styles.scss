@@ -1,0 +1,65 @@
+@import '../../../../scss/variables';
+@import '../../../../scss/mixins';
+.statusIconWithLabel{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    label {
+        @include font_style(14px,#8d8d8d);
+        margin-bottom: 0;
+        margin-left: 12px;
+    }
+    .boxIconMainLayer{
+        width: 34px;
+        height:34px;
+        border-radius: 17px;
+        background: $white;
+        box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.051);
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-left: 3px;
+        justify-content: center;
+        .boxIconColorLayer {
+          width: 26px;
+          height:26px;
+          border-radius: 13px;
+          background: $christi;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          .icon {
+            width: 18px;
+            height:16px;
+            @include svgAllSectionColorFill;
+          }
+          .iconRight {
+            width: 18px;
+            height:16px;
+            @include svgAllSectionColorFill;
+            @include svgAllSectionColorStroke;
+          }
+          .topImage{
+            border-radius: 50%;
+            width: 16px;
+            height: 16px;
+            padding: 2px;
+            position: absolute;
+            top: -4px;
+            right: -4px;
+            border: 0;
+            polyline {
+              stroke: white !important;
+            }
+          }
+          .ok {
+            background: $boston-blue;
+          }
+          .ng {
+            background: $razmattaz;
+          }
+        }
+    }
+}

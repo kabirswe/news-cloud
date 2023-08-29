@@ -1,0 +1,374 @@
+@import '../../../scss/variables';
+@import '../../../scss/mixins';
+
+.mailMagazineComponent {
+  padding: 10px 15px 15px 14px;
+  .pageTitle {
+    padding-left: 15px;
+    @include font_style(16px, $mine-shaft, $medium, 19.2px);
+  }
+  .pageHeading {
+    .mailGroup {
+      font-size: 14px;
+      font-family: $notosanMedium;
+      margin-top: 0px;
+      line-height: 16.8px;
+      color: $article_active;
+    }
+    margin-bottom: 10px;
+  }
+  .tableWrapper {
+    border-radius: 4px;
+    .makeScroller {
+      height: 200px !important;
+      max-height: 200px !important;
+    }
+  }
+}
+.emailBodyWrapper {
+  border: 1px solid $mercury;
+  border-radius: 7px;
+  font-size: 13px;
+  text-align: center;
+  height: 555px;
+  line-height: 50;
+}
+.addGroupBtn {
+  border: 2px solid $article_link_menu;
+  border-radius: 4px;
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 33px;
+  position: absolute;
+  right: 100px;
+  cursor: pointer;
+  svg {
+    width: 16px;
+    height: 16px;
+    fill: $article_link_menu;
+    color: $white;
+  }
+  span {
+    margin-left: 6px;
+    font-size: 12px;
+    font-weight: $notosanMedium;
+  }
+}
+.mailCheckbox {
+  display: flex;
+}
+.deleteConfirm {
+  padding-bottom: 20px;
+  text-align: left;
+  @include font_style(14px, $label_gray, normal, 16.8px);
+}
+.addNewPeopleForm {
+  font-size: 12px;
+  font-family: $notosans;
+}
+
+.customBtn {
+  @include font_style(12px, $white, $medium, 14.4px);
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  width: unset !important;
+  outline: none;
+  height: 33px;
+  margin-right: 0px;
+  margin-left: 10px;
+  &:focus {
+    border: 0px;
+    outline: none;
+  }
+}
+.dangerBtn {
+  background: $dangerBgColor !important;
+  color: $white;
+  width: 71px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include font_style(12px, $white, $medium, 14.4px);
+  &:focus {
+    border: 0px;
+    outline: none;
+  }
+}
+.topPadding {
+  position: relative;
+  top: 8px !important;
+}
+
+.customClose {
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border: none;
+  position: absolute;
+  right: -15px;
+  top: -15px;
+  cursor: pointer;
+  padding-right: 0px !important;
+  &:focus {
+    border: none;
+    outline: none;
+  }
+  svg {
+    width: 30px;
+    height: 30px;
+    width: 30px;
+    height: 30px;
+    background-color: #f8f9fa;
+    border-radius: 999px;
+    background-position: center;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+  }
+}
+.groupInput {
+  display: flex;
+  margin-bottom: 10px;
+  .inputLabel {
+    width: 110px;
+    font-size: 12px;
+    font-family: $notosans;
+  }
+  .input {
+    width: calc(100% - 110px);
+    input {
+      background: #f8f8f8;
+    }
+  }
+}
+.commonButton {
+  width: 105px !important;
+  height: 33px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-family: $notosans;
+  line-height: 16.8px;
+  outline: none !important;
+  &:focus {
+    outline: none;
+    border: 0;
+  }
+}
+.serverResult {
+  font-size: 14px;
+  font-family: $notosans;
+}
+.modalHeader {
+  height: 46px !important;
+  background: $white-smoke1;
+  border-bottom: 0px !important;
+  h5 {
+    font-size: 14px;
+    font-family: $notosanMedium;
+    color: $article_link_menu !important;
+    line-height: 16.8px;
+  }
+  .modal-title {
+    font-size: 14px;
+    font-family: $notosanMedium;
+  }
+}
+.groupMailModal {
+  width: 452px !important;
+}
+.modalBody {
+  padding-bottom: 0px !important;
+}
+.modalFooter {
+  border: 0px !important;
+  padding-top: 0px !important;
+  padding-bottom: 25px !important;
+  margin-top: 0px !important;
+  justify-content: flex-end !important;
+}
+.modalFooterDelete {
+  border: 0px !important;
+  padding-top: 0px !important;
+  padding-bottom: 25px !important;
+  margin-top: 0px !important;
+  justify-content: center !important;
+}
+.paddingTop {
+  padding-top: 0px;
+  padding-bottom: 11px;
+}
+
+.groupDetailsAddEmailBtn {
+  border: 2px solid $article_link_menu;
+  border-radius: 4px;
+  padding-left: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 33px;
+  cursor: pointer;
+  color: $article_link_menu;
+  font-size: 12px;
+  font-family: $notosanMedium;
+  line-height: 14.4px;
+  margin-right: 5px;
+  width: 118px;
+  svg {
+    width: 16px;
+    height: 16px;
+    fill: $article_link_menu;
+    color: $white;
+  }
+  span {
+    margin-left: 6px;
+    font-size: 12px;
+    font-family: $notosanMedium;
+    @include font_style(12px, $article_link_menu, $medium, 14.4px);
+  }
+}
+.uploadBtn {
+  width: 132px !important;
+}
+.topFit {
+  margin-top: -1px !important;
+}
+.downLoadBtn {
+  width: 132px !important;
+}
+.rightSideMenu {
+  display: flex;
+  margin-top: 24px;
+  margin-bottom: 10px;
+}
+.groupEditSaveBtn {
+  margin-top: 37px;
+}
+.notFoundData {
+  text-align: center;
+  font-size: 14px;
+  font-family: $notosans;
+  margin: 120px auto;
+}
+
+.errorMsg {
+  color: $red !important;
+}
+.bgWhite {
+  input {
+    background: $white;
+  }
+}
+body {
+  padding-right: 0 !important;
+}
+.buttonLoader {
+  margin-left: 42px !important;
+}
+
+.disabledBtn {
+  cursor: not-allowed !important;
+  opacity: 0.3;
+  &:active {
+    pointer-events: none;
+  }
+}
+.mailGroup_mailMagazineComponent__eWWAk {
+  padding: 0px 15px;
+}
+.mailCardBody {
+  padding: 5px 0px 20px 23px;
+}
+.groupInputArea {
+  border: 1px solid #dfdfdf;
+  background: $desert-storm;
+  border-radius: 4px;
+  display: flex;
+  .groupSection {
+    padding-left: 23px;
+    padding-bottom: 20px;
+    max-width: 303px;
+    input {
+      height: 32px;
+      width: 280px;
+      background: $white;
+      color: $label_gray;
+    }
+  }
+  .groupComment {
+    width: 300px;
+    padding-left: 20px;
+    max-width: 303px;
+    input {
+      height: 32px;
+      background: $white;
+      width: 280px;
+      color: $label_gray;
+    }
+  }
+  .groupBtnSave {
+    margin-top: 35px;
+    margin-left: 10px;
+    button {
+      width: 62px !important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include font_style(12px, $white, normal, 14.4px);
+    }
+  }
+}
+.pagePadding {
+  padding: 3px 15px 15px 14px;
+}
+.dataTableList {
+  min-height: 100px;
+}
+.deleteButtonArea {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  justify-content: flex-end;
+  margin-top: -60px;
+  z-index: 1000;
+  position: relative;
+  padding-right: 15px;
+  .deleteText {
+    width: auto;
+    display: none;
+    margin-top: 0px;
+    padding-right: 14px;
+    font-size: 12px !important;
+    line-height: 14.4px;
+    padding-left: 10px !important;
+    input {
+      margin-right: 10px !important;
+    }
+    .custom-control-label {
+      padding-left: 0px;
+      margin-left: 10px;
+    }
+    span {
+      margin-top: 2px;
+      color: $gray;
+      font-size: 12px;
+      padding-left: 30px;
+    }
+  }
+}
+.widthLoader {
+  button {
+    width: 145px !important;
+    opacity: 1 !important;
+  }
+}
+
+.spinLoader {
+  position: relative;
+}

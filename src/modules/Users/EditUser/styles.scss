@@ -1,0 +1,325 @@
+@import '../../../scss/variables';
+@import '../../../scss/mixins';
+
+.user-management {
+  margin-bottom: 20px;
+  padding-right: 30px !important;
+  padding-left: 30px !important;
+  &.edit-user-management {
+    .locked-unlocked-section {
+      background: #f8f8f8 !important;
+      height: 59px;
+      padding: 0 26px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .lock-block {
+        margin-right: 52px;
+        .custom-control {
+          margin-top: 4px;
+        }
+      }
+    }
+    .basic-info-section {
+      .required-inp {
+        input {
+          height: 32px;
+          // width: 280px;
+          &:focus {
+            outline: none;
+            box-shadow: none;
+            border: 1px solid $iron;
+          }
+        }
+      }
+    }
+    .user-role {
+      .float-right {
+        button {
+          display: none;
+        }
+      }
+    }
+    .float-right {
+      .edit-button,
+      .save-button {
+        margin-right: 20px;
+      }
+    }
+    .required-inp {
+      &.error {
+        border: none;
+        input {
+          border: 1px solid $red;
+        }
+      }
+      label {
+        // &::after {
+        //     content:" *";
+        //     color: $red;
+        // }
+      }
+    }
+  }
+  .invitationBtn {
+    @include font_style(14px, $white, $medium, 16.8px);
+    // background-color: $lochmara;
+    width: 93px;
+    height: 33px;
+    margin-top: 14px;
+    margin-right: 0px;
+  }
+  .title,
+  .sub-title {
+    font-family: $notosans;
+    color: $mine-shaft;
+    text-transform: capitalize;
+  }
+  .title {
+    margin-bottom: 18px;
+    margin-top: 26px;
+    @include font_style(16px, null, $medium, 19.2px);
+  }
+  .sub-title {
+    @include font_style(14px);
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+  }
+  .card {
+    background: $desert-storm;
+    padding: 5px 5px 20px 26px;
+    border: 1px solid $table_border_color;
+    border-radius: 4px;
+    .email,
+    .username {
+      margin-bottom: 0px;
+      label {
+        @include font_style(12px);
+        color: $boulder;
+      }
+      input {
+        @include font_style(12px);
+        color: $boulder;
+        background-color: $white;
+      }
+    }
+  }
+  .error {
+    margin-bottom: 0;
+    input {
+      border: 1px solid $red;
+      outline: none;
+    }
+  }
+}
+
+.edit-user-checkbox {
+  float: left;
+}
+.edit-role-text {
+  float: left;
+  padding-left: 30px;
+  font-size: 12px;
+  line-height: 26px;
+  color:$gray;
+}
+.edit-user-margin-top {
+  margin-top: 16px;
+}
+.role-title {
+  font-family: $notosans;
+  margin: 21px 0 8px 0;
+  @include font_style(14px, $mine-shaft, $medium);
+  .text-danger{
+    color:$red !important;
+  }
+}
+
+.table-summary {
+  font-family: Roboto;
+  font-style: normal;
+  @include font_style(12px, $star-dust, normal, 14px);
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+.user-profile {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  margin-right: 16.5px;
+  margin-bottom: 0px;
+}
+.user-list-scroll {
+  height: 100px;
+  overflow: scroll;
+  width: 100%;
+  tbody {
+    height: 100px !important;
+    overflow: scroll;
+  }
+}
+
+.user-input-area {
+  border: 1px solid $table_border_color;
+  background: $desert-storm;
+  border-radius: 4px;
+  display: flex;
+  .user-email {
+    max-width: 303px;
+    word-break: break-all;
+    padding-left: 23px;
+    padding-bottom: 20px;
+    input {
+      height: 32px;
+      width: 280px;
+      background: $white;
+      @include font_style(12px, $label_gray, null, 14.4px);
+    }
+    label{
+      @include font_style(12px, $label_gray, null, 16.8px);
+      .text-danger{
+        color:$red !important;
+      }
+    }
+  }
+  .user-name {
+    width: 300px;
+    padding-left: 20px;
+    word-break: break-all;
+    input {
+      height: 32px;
+      background: $white;
+      width: 280px;
+      @include font_style(12px, $label_gray, null, 14.4px);
+    }
+    label{
+      @include font_style(12px, $label_gray, null, 16.8px);
+      .text-danger{
+        color:$red !important;
+      }
+    }
+  }
+}
+
+.disabledBtn {
+  cursor: not-allowed !important;
+  opacity: 0.3;
+  &:active {
+    pointer-events: none;
+  }
+}
+.dangerBtn {
+  background: $dangerBgColor !important;
+  color: $white;
+  &:focus {
+    border: 0px;
+    outline: none;
+  }
+}
+.delete-button-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .deleteText {
+    display: flex;
+    margin-top: 14px;
+    padding-right: 14px;
+    font-size: 12px !important;
+    line-height: 14.4px;
+    padding-left: 10px !important;
+    input {
+      margin-right: 10px !important;
+    }
+    .custom-control-label {
+      padding-left: 30px;
+      margin-left: 10px;
+    }
+    span {
+      margin-top: 2px;
+      color: $label_gray;
+      font-size: 12px;
+    }
+  }
+}
+
+
+/* Delete modal UI */
+
+.customClose {
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border: none;
+  position: absolute;
+  right: -15px;
+  top: -15px;
+  cursor: pointer;
+  &:focus {
+    border: none;
+    outline: none;
+  }
+  svg {
+    width: 30px;
+    height: 30px;
+    width: 30px;
+    height: 30px;
+    background-color: #f8f9fa;
+    border-radius: 999px;
+    background-position: center;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+  }
+}
+
+.userMailModal {
+  width: 452px !important;
+}
+.modalBody {
+  padding-bottom: 20px !important;
+  @include font_style(14px, $label_gray);
+}
+.modalFooter {
+  border: 0px !important;
+  padding-top: 0px !important;
+  padding-bottom: 25px !important;
+  margin-top: 0px !important;
+  justify-content: center !important;
+}
+.modalHeader {
+  height: 46px !important;
+  background: $white-smoke1;
+  border-bottom: 0px !important;
+  h5 {
+    font-size: 14px;
+    font-family: $notosanMedium;
+    color: $article_link_menu !important;
+    line-height: 16.8px;
+  }
+  .modal-title {
+    font-size: 14px;
+    font-family: $notosanMedium;
+  }
+}
+.commonButton {
+  width: 105px !important;
+  height: 40px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-family: $notosans;
+  line-height: 16.8px;
+  outline: none !important;
+  &:focus {
+    outline: none;
+    border: 0;
+  }
+}
+.disabledBtn {
+  cursor: not-allowed !important;
+  opacity: 0.3;
+  &:active {
+    pointer-events: none;
+  }
+}

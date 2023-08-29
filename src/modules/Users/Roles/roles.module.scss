@@ -1,0 +1,31 @@
+@import '../../../scss/variables';
+@import '../../../scss/mixins';
+
+.roleList {
+  td {
+    @include font_style(12px, $label_gray, normal, 14px);
+    text-align: center;
+    height: 43px;
+    &:first-child {
+      text-align: left;
+      padding-left: 0;
+      text-transform: capitalize;
+      label {
+        padding-left: 38px !important;
+        padding-top:3px;
+      }
+    }
+    &:nth-child(2) {
+      line-height: 20px;
+      padding-left: 0;
+    }
+  }
+  th{
+    &:first-child{
+      text-align: left;
+    }
+  }
+}
+table tr:nth-child(odd) td{
+  background:$desert-storm;
+}

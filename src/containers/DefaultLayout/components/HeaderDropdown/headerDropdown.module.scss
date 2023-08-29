@@ -1,0 +1,30 @@
+@import '../../../../scss/variables';
+.hide-default-arrow {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+}
+
+.headerDropdown {
+  height: 30px;
+  width: 232px;
+  background: $white;
+  border: none;
+  border-right: 1px solid $mercury;
+  background: url(/assets/img/chevron-down-outline.svg) no-repeat;
+  background-size: 19px;
+  background-position: 94% 6px;
+  outline: none;
+  cursor: pointer;
+  @extend .hide-default-arrow;
+  &:focus {
+    box-shadow: none !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .headerDropdown {
+    width: 145px;
+  }
+}

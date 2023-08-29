@@ -1,0 +1,28 @@
+@import '../../../../scss/variables';
+@import '../../../../scss/mixins';
+
+.statistics-block-area {
+    border: 1px solid #E9E9E9;
+    height: 100%;
+    width: 100%;
+    .title {
+        height: 36px;
+        background-color: #F8F8F8;
+        border-bottom: 1px solid #E9E9E9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include font_style(12px, #008ECD, 200, 15px);
+    }
+    .statistics-block {
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: calc(100% - 36px);
+        .statistics-error {
+            @include font_style(10px, $red);
+        }
+    }
+}

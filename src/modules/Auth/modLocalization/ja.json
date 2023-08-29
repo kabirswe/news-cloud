@@ -1,0 +1,58 @@
+{
+  "translation": {
+    "LOGIN": {
+      "PAGE_TITLE": "Login",
+      "EMAIL_LABEL": "E-mailアドレス または、ID",
+      "EMAIL_FORGET_PASSWORD_PLACEHOLDER": "example@mail.com",
+      "EMAIL_PLACEHOLDER": "example@mail.com または ID",
+      "PASSWORD_LABEL": "パスワード",
+      "PASSWORD_PLACEHOLDER": "入力してください",
+      "FORGOT_PASSWORD_TEXT": "ID・パスワードを忘れた場合",
+      "LOGIN_BUTTON_TEXT": "ログイン",
+      "FORGET_PASSWORD_TEXT": "ID・パスワードを忘れた場合 ",
+      "LOGIN_ERROR_TEXT": "パスワードまたはE-mailアドレスが違います",
+      "EMAIL_PASSWORD_REQUIRED": "メールアドレスまたはパスワードが必要です。"
+    },
+    "FORGOT": {
+      "PAGE_TITLE": "パスワードを忘れた方",
+      "EMAIL_LABEL": "パスワードの再設定方法について、メールでご案内します",
+      "EMAIL_REQUIRED": "メールアドレスが必要です。",
+      "EMAIL_NOT_VALID": "メールアドレスが無効です。"
+    },
+    "RESET": {
+      "PAGE_TITLE": "パスワードの再設定",
+      "INPUT_LABEL": "新しいパスワードを設定してください。",
+      "PASSWORD_PLACEHOLDER": "パスワード",
+      "RE_PASSWORD_PLACEHOLDER": "パスワード確認",
+      "PASSWORD_REQUIRED": "パスワードが必要です。",
+      "PASSWORD_NOT_SAME": "入力されたパスワードが一致しません。",
+      "PASSWORD_LENGTH_ERROR":"パスワードは英数字で8〜32文字にする必要があります。"
+    },
+    "REGISTRATION": {
+      "PAGE_TITLE": "ユーザー登録",
+      "EMAIL_LABEL": "ID ",
+      "ID_ERROR_TEXT": "IDはすでに使用されています。",
+      "NAME_LABEL": "氏名 ",
+      "PASSWORD_LABEL": "パスワード ",
+      "RE_PASSWORD_LABEL": "パスワード確認 ",
+      "PLACEHOLDER_TEXT": "入力してください",
+      "BUTTON_TEXT": "登録",
+      "EMAIL_REQUIRED": "メールアドレスを入力してください。",
+      "EMAIL_NOT_VALID": "入力されたメールアドレスは無効です。",
+      "PASSWORD_NOT_SAME": "入力されたパスワードが一致しません。",
+      "FULL_NAME_REQUIRED": "氏名を入力してください。",
+      "PASSWORD_FILED_REQUIRED": "パスワードを入力してください。",
+      "CONFIRM_PASSWORD_FILED_REQUIRED": "パスワードを確認欄に入力してください。",
+      "ID_NOT_VALID": "会員IDへの入力値が不正です。",
+      "EMAIL_OR_ID_REQUIRED": "ユーザーIDを入力してください。",
+      "PASSWORD_LENGTH_ERROR":"パスワードは英数字で8〜32文字にする必要があります。",
+      "EMAIL_OR_ID_EXISTS":"入力されたユーザーIDはすでに使用されています。他のユーザーIDを入力してください。"
+    },
+    "TOKEN_EXPIRED":{
+      "TITLE":"有効期間切れ",
+      "ACTIVATED_TEXT":"登録用URLの有効期間が切れています。",
+      "DESCRIPTION_TEXT1":"現在、こちらのURLは有効期間を過ぎたため、ご利用いただけません。",
+      "DESCRIPTION_TEXT2":"管理者に連絡し、登録用URLの再発行を依頼してください。"
+    }
+  }
+}

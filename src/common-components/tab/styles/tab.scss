@@ -1,0 +1,44 @@
+@import '../../../scss/variables';
+
+nav {
+  padding-left: 20px;
+  .tab_button {
+    display: inline-block;
+    background-color: $white;
+    cursor: pointer;
+    color: $medium-blue;
+    width: 90px;
+    margin: auto;
+    padding:5px;
+    outline: none;
+    text-align: center;
+    font-size: 13px;
+    font-family: $notosans;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    &.active {
+      outline: none;
+      color: $mine-shaft;
+      border-top: 1px solid $grey;
+      border-left: 1px solid $grey;
+      border-right: 1px solid $grey;
+      margin-bottom: -1px;
+      border-bottom: 1px solid transparent;
+    }
+    &.disable {
+      color: $white;
+      cursor: none;
+      display: none;
+    }
+  }
+
+  &.nav-container-block {
+    background: $white;
+    border-bottom: 1px solid $grey;
+
+  }
+}
+.tab-pane-container {
+  overflow-y: auto;
+  padding-top: 20px;
+}

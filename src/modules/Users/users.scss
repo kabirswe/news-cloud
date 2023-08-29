@@ -1,0 +1,142 @@
+@import '../../scss/variables';
+
+.user-management {
+  margin-bottom: 20px;
+  padding-right: 30px !important;
+  padding-left: 30px !important; 
+  &.edit-user-management {
+    .locked-unlocked-section {
+        height: 59px;
+        padding: 0 26px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .lock-block {
+          margin-right: 52px;
+          .custom-control {
+            margin-top: 4px;
+          }
+        }
+    }
+    .basic-info-section {
+        .required-inp {
+            input {
+                height: 32px;
+                // width: 280px;
+                &:focus {
+                    outline: none;
+                    box-shadow: none;
+                    border: 1px solid $iron;
+                }
+            }
+        }
+    }
+    .user-role {
+        .float-right {
+            button {
+                display: none;
+            }
+        }
+    }
+    .float-right {
+        .edit-button,
+        .save-button {
+            margin-right: 20px;
+        }
+    }
+    .required-inp {
+        &.error {
+            border: none;
+            input {
+                border: 1px solid $red;
+            }
+        }
+        label {
+            // &::after {
+            //     content:" *";
+            //     color: $red;
+            // }
+        }
+    }
+  }
+  .title,
+  .sub-title {
+    font-family: $notosans;
+    color: $mine-shaft;
+  }
+  .title {
+    @include font_style(18px, null, bold);
+    margin-bottom: 25px;
+    margin-top: 40px;
+    letter-spacing: 2px;
+  }
+  .sub-title {
+    @include font_style(14px);
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+  }
+  .card {
+    background: $desert-storm;
+    padding: 5px 5px 20px 26px;
+    border: 1px solid $alto;
+    border-radius: 7px;
+    .email,
+    .username {
+      margin-bottom: 0px;
+      label {
+        @include font_style(12px, $boulder);
+      }
+      input {
+        @include font_style(12px, $boulder);
+      }
+    }
+  }
+  .error {
+    margin-bottom: 0;
+    input {
+      border: 1px solid $red;
+      outline: none;
+    }
+  }
+}
+
+.edit-user-checkbox{
+  float: left;
+}
+.edit-role-text{
+  float: left;
+  padding-left: 30px;
+}
+.edit-user-margin-top {
+  margin-top:16px;
+}
+.role-title {
+  font-family: $notosans;
+  @include font_style(14px, $mine-shaft, bold);
+  margin: 25px 0 15px 0;
+}
+
+.table-summary {
+  font-family: Roboto;
+  font-style: normal;
+  @include font_style(12px, $star-dust, normal, 14px);
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+.user-profile {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  margin-right: 16.5px;
+  margin-bottom: 0px;
+}
+.user-list-scroll {
+  height: 100px;
+  overflow: scroll;
+  width: 100%;
+  tbody {
+    height: 100px !important;
+    overflow: scroll;
+  }
+}

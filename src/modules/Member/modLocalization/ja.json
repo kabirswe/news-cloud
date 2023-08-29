@@ -1,0 +1,51 @@
+{
+    "translation": {
+        "MEMBER": {
+            "PAGE_TITLE": "会員一覧",
+            "MEMBER_ID": "会員 ID ",
+            "FULL_NAME": "氏名",
+            "MEMBER_NAME": "会員名",
+            "MAIL_ADDRESS": "メールアドレス",
+            "INVITATION_FIELD": "招待",
+            "FIRST_DAY": "初回日",
+            "PARTICIPATION_DAY": "参加日",
+            "PERMISSION": {
+                "PAGE_TITLE": "会員管理"
+            },
+          "MEMBER_LINK":"会員管理",
+          "DELETE_ALERT_TEXT":"データを物理削除する場合は、チェックしてください。",
+          "INVITATION": "招待",
+          "MEMBER_ADDITION": "会員追加",
+          "CSV_DOWNLOAD": "CSV ダウンロード",
+          "CSV_addition": "CSV追加",
+          "CSV_delete": "CSV削除",
+          "ADD": {
+                "PAGE_TITLE": "会員追加",
+                "PAGE_TITLE_EDIT": "会員編集",
+                "LABEL_PASSWORD": "パスワード",
+                "LABEL_CONFIRMATION": "パスワード確認",
+                "SUBMIT_BUTTON": "保存",
+                "DELETE_BUTTON": "削除"
+            },
+          "MODAL_TITLE": "削除確認メッセージ",
+          "MODAL_TITLE_INVITE": "招待確認メッセージ",
+          "DELETE_TEXT": "この会員を削除します。よろしいですか？",
+          "DELETE_TEXT_CSV": "CSVファイル通り会員データを削除します。よろしいですか？",
+          "INVITE_TEXT": "選択した会員に招待メールを送信します。よろしいですか？",
+          "MEMBER_REQUIRED_TEXT": "招待する会員を1つ以上選択してください。",
+          "CSV_ERROR": {
+            "FORMAT": "ファイル形式が間違いました。csvファイル形式を使用してください。",
+            "SIZE": "2MB未満のファイルサイズを選択してください。"
+          },
+          "ERROR": {
+            "ID_REQUIRED": "会員IDを入力してください。",
+            "ID_ERROR": "会員IDへの入力値が不正です。",
+            "EMAIL_REQUIRED": "メール アドレスを入力してください。",
+            "EMAIL_ERROR": "メールアドレスへの入力値が不正です。",
+            "NAME_REQUIRED": "氏名を入力してください。",
+            "PASSWD_REQUIRED": "パスワードが必要です。",
+            "CONFIRM_PASSWD_REQUIRED": "パスワードを確認してください。"
+          }
+        }
+    }
+}

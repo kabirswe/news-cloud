@@ -1,0 +1,57 @@
+@import './../../../../scss/variables';
+
+.icon {
+  width: 20px;
+  height: 20px;
+  fill: $cloud;
+  path {
+    fill: $cloud;
+    stroke: $cloud !important;
+  }
+  line {
+    fill: $cloud;
+    stroke: $cloud !important;
+  }
+  polyline, rect {
+    fill: $white;
+    stroke: $white !important;
+  }
+}
+
+.menuItem {
+  width: 100px;
+  height: 65px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-decoration: none;
+  font-family: $notosans;
+  font-size: 10px;
+  cursor: pointer;
+  span {
+    color: $cloud;
+  }
+  &:hover {
+    text-decoration: none;
+    span {
+      color: $white;
+    }
+    .icon {
+      // fill: $white;
+      fill: $white;
+      path {
+        fill: $white;
+        stroke: $white !important;
+      }
+      line {
+        fill: $white;
+        stroke: $white !important;
+      }
+    }
+  }
+}
+.icon {
+  margin-bottom: 5px;
+}

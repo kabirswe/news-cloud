@@ -1,0 +1,267 @@
+@import '../../../scss/variables';
+@import '../../../scss/mixins';
+
+.user-management {
+  margin-bottom: 20px;
+  padding-right: 30px !important;
+  padding-left: 30px !important;
+  &.edit-user-management {
+    .locked-unlocked-section {
+      height: 59px;
+      padding: 0 26px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .lock-block {
+        margin-right: 52px;
+        .custom-control {
+          margin-top: 4px;
+        }
+      }
+    }
+    .basic-info-section {
+      .required-inp {
+        input {
+          height: 32px;
+          // width: 280px;
+          &:focus {
+            outline: none;
+            box-shadow: none;
+            border: 1px solid $iron;
+          }
+        }
+      }
+    }
+    .user-role {
+      position: relative;
+      .float-right {
+        button {
+          display: none;
+        }
+      }
+    }
+    .float-right {
+      .edit-button,
+      .save-button {
+        margin-right: 20px;
+      }
+    }
+    .required-inp {
+      &.error {
+        border: none;
+        input {
+          border: 1px solid $red;
+        }
+      }
+      label {
+        // &::after {
+        //     content:" *";
+        //     color: $red;
+        // }
+      }
+    }
+  }
+  .invitationBtn {
+    @include font_style(14px, $white, $medium, 16.8px);
+    // background-color: $lochmara;
+    width: 133px;
+    height: 33px;
+    margin-top: 15px;
+    margin-right: 0px;
+  }
+
+  .title,
+  .sub-title {
+    font-family: $notosans;
+    color: $mine-shaft;
+  }
+  .title {
+    margin-bottom: 10px !important;
+    margin-top: -5px !important;
+    @include font_style(16px, null, $medium, 19.2px);
+  }
+  .sub-title {
+    @include font_style(14px);
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+  }
+  .card {
+    background: $desert-storm;
+    padding: 5px 5px 20px 26px;
+    border: 1px solid $alto;
+    border-radius: 7px;
+    .email,
+    .username {
+      margin-bottom: 0px;
+      label {
+        @include font_style(12px);
+        color: $boulder;
+      }
+      input {
+        @include font_style(12px);
+        color: $boulder;
+        background-color: $white;
+      }
+    }
+  }
+  .error {
+    margin-bottom: 0;
+    input {
+      border: 1px solid $red;
+      outline: none;
+    }
+  }
+}
+
+.edit-user-checkbox {
+  float: left;
+}
+.edit-role-text {
+  float: left;
+  padding-left: 30px;
+}
+.edit-user-margin-top {
+  margin-top: 16px;
+}
+.role-title {
+  font-family: $notosans;
+  margin: 21px 0 15px 0;
+  @include font_style(14px, $mine-shaft, $medium);
+  .text-danger{
+    color:$red !important;
+  }
+}
+
+.table-summary {
+  font-family: Roboto;
+  font-style: normal;
+  @include font_style(12px, $star-dust, normal, 14px);
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+.user-profile {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  margin-right: 16.5px;
+  margin-bottom: 0px;
+}
+.user-list-scroll {
+  height: 100px;
+  overflow: scroll;
+  width: 100%;
+  tbody {
+    height: 100px !important;
+    overflow: scroll;
+  }
+}
+
+.user-input-area {
+  border: 1px solid $table_border_color;
+  background: $desert-storm;
+  border-radius: 4px;
+  display: flex;
+  .user-email {
+    max-width: 303px;
+    word-break: break-all;
+    padding-left: 23px;
+    padding-bottom: 20px;
+    input {
+      height: 32px;
+      width: 280px;
+      background: $white;
+      @include font_style(12px, $label_gray, null, 14.4px);
+    }
+    label{
+      @include font_style(12px, $label_gray, null, 16.8px);
+      .text-danger{
+        color:$red !important;
+      }
+    }
+  }
+  .user-name {
+    width: 300px;
+    padding-left: 20px;
+    word-break: break-all;
+    input {
+      height: 32px;
+      background: $white;
+      width: 280px;
+      @include font_style(12px, $label_gray, null, 14.4px);
+    }
+    label{
+      @include font_style(12px, $label_gray, null, 16.8px);
+      .text-danger{
+        color:$red !important;
+      }
+    }
+  }
+}
+.invitationBtn {
+  @include font_style(14px, $white, normal, 16.8px);
+  background-color: $lochmara;
+  width: 93px !important;
+  height: 33px;
+  margin-top: 15px;
+  margin-right: 0px;
+  margin-left: 0px;
+  outline: none;
+  outline: none !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:focus {
+    outline: none;
+    border: 0;
+  }
+}
+
+.disabledBtn {
+  cursor: not-allowed !important;
+  opacity: 0.3;
+  &:active {
+    pointer-events: none;
+  }
+}
+.insideLoader {
+  position: relative;
+}
+.disabledInput {
+  cursor: not-allowed !important;
+  &:active {
+    pointer-events: none;
+  }
+}
+.user-list-pagination {
+  //.kDSQmh {
+  //  padding-left: 0px;
+  //  margin-left: 0px;
+  //  padding-top: 0px;
+  //  margin-top: 0x;
+  //  justify-content: flex-start !important;
+  //}
+  .rdt_Pagination {
+    padding-left: 0px;
+    margin-left: 0px;
+    padding-top: 0px;
+    justify-content: flex-start !important;
+    .ncoBp {
+      margin-left: 0px !important;
+    }
+  }
+  .embYcA:hover {
+    background: none !important;
+  }
+  .embYcA:focus {
+    background: none !important;
+    outline: none !important;
+  }
+  .embYcA:hover:not {
+    background: none !important;
+    }
+}
+
+.nc-data-table .rdt_Table .rdt_TableBody .rdt_TableRow .rdt_TableCell {
+  width: 60px;
+}

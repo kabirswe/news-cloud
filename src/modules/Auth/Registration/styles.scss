@@ -1,0 +1,174 @@
+@import 'src/scss/variables';
+@import 'src/scss/mixins';
+
+.auth-container-main-registration {
+  background: $white;
+  .auth-container {
+    padding-left: 0;
+    margin-top: 65px;
+    margin-bottom: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    .auth-container-logo {
+      margin-bottom: 20.4px;
+      position: relative;
+      background: $white;
+      width: 154px;
+      height: 158px;
+      img {
+        width: 100%;
+        height: 100%;
+        border: 0px;
+      }
+    }
+    .auth-container-content {
+      background-color: $white_15;
+      padding: 31.9px 37px 37px;
+      width: 384px;
+      min-height: 457px;
+      border: 1px solid $border_iron;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.16);
+      z-index: 100;
+      position: relative;
+      &.reset-container-content {
+        margin-bottom: 55px;
+      }
+      &.forgot-container-content {
+        margin-bottom: 117px;
+      }
+      .auth-input-form {
+        width: 100%;
+        align-self: center;
+        margin-top: 0;
+        .progress {
+          margin-top: 3.5px;
+          height: 2px;
+          .progress-bar-strong {
+            background: $lima;
+          }
+          .progress-bar-medium {
+            background: $turbo;
+          }
+          .progress-bar-weak {
+            background: $red;
+          }
+        }
+        .title {
+          font-style: normal;
+          @include font_style(18px, $forgotTitle, normal, 21.6px);
+          margin-bottom: 5px;
+        }
+        .login-title {
+          @include font_style(22px);
+        }
+        .input-button {
+          justify-content: center;
+          display: flex;
+          margin-top: 20px;
+          .common-button {
+            width: 146px;
+            height: 33px !important;
+            border-radius: 4px;
+            @include font_style(13px, $white, $medium, 18px);
+            button {
+              @include font_style(13px, $white, $medium, 18px);
+            }
+          }
+        }
+        .com-inp-label {
+          margin-top: 11px;
+          margin-bottom: 10px;
+          font-style: normal;
+          @include font_style(13px, $gray, normal, 12px);
+        }
+        .required {
+          color: $red;
+        }
+        .label-text-size {
+          @include font_style(12px);
+          letter-spacing: -1px;
+        }
+        .inp-email {
+          .input-box {
+            background: $catskill_white;
+          }
+        }
+        .common-inp {
+          width: 308px;
+          &.reset2 {
+            input {
+              margin-top: 20px !important;
+            }
+          }
+          input {
+            height: 36px;
+            @include font_style(12px, $label_gray);
+            @include inputPlaceholderBrowserSupport;
+            padding: 11px;
+            border-radius: 4px;
+            border: 1px solid $input_border_color;
+          }
+          label {
+            line-height: 12px;
+            margin-top: 15.6px;
+            margin-bottom: 10px;
+          }
+          .text-danger {
+            color: $red !important;
+          }
+        }
+        .error {
+          input[type='text'],
+          input[type='password'] {
+            border: 1px solid $red;
+            outline: none;
+            //color: $red;
+          }
+        }
+        .forgot-psw-link {
+          a {
+            color: $gray;
+            &:hover {
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.custom-margin-fourteen {
+  margin-top: 14px;
+}
+.custom-margin-three {
+  margin-top: 3px;
+}
+.text-msg-success {
+  @include font_style(12px, $lima, null, 14px);
+  margin-bottom: 5px;
+}
+
+/*
+  ##Device = Smart Phone (portrait)
+  ##Screen = B/w screen to 1370px
+*/
+@media screen and (max-width: 1370px) {
+  .auth-container-main-registration{
+    height: calc(100vh - 65px);
+    .auth-container {
+      margin-top: 65px;
+      margin-bottom: 65px;
+    }
+  }
+}
+@media screen and (min-width: 1400px) {
+  .auth-container-main-registration{
+    .auth-container {
+      margin-top: 130px;
+    }
+  }
+}

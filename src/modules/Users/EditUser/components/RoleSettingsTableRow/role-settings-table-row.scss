@@ -1,0 +1,38 @@
+@import '../../../../../scss/variables';
+.table-row-content {
+  td {
+    text-align: center;
+    height: 43px;
+    &:first-child {
+      display: flex;
+      align-items: center;
+      white-space: nowrap;
+      padding-left: 26px;
+      text-transform: capitalize;
+    }
+    .custom-control {
+      margin-top: 10px;
+    }
+    p {
+      margin-bottom: 0;
+      padding-left: 44px;
+      font-style: 14px;
+      font-size: 12px;
+      margin-top: 3px;
+      text-transform: capitalize;
+      color:$gray;
+    }
+  }
+}
+.disabledInput{
+  cursor: not-allowed !important;
+  &:active {
+    pointer-events: none;
+  }
+  input{
+    cursor: not-allowed !important;
+    &:active {
+      pointer-events: none;
+    }
+  }
+}

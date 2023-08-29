@@ -1,0 +1,343 @@
+@import '../../../scss/variables';
+.container {
+  display: flex;
+  .containerLeft {
+    display: flex;
+    min-height: calc(100vh - 60px);
+    .filterContent {
+      width: 262px;
+      border: 1px solid $iron;
+      .sectionList {
+        padding: 16px;
+        border-bottom: 1px solid $white-smoke_gray;
+        label {
+          margin-bottom: 10px;
+        }
+        .sectionContent {
+          display: flex;
+          justify-content: space-between;
+          width: 201px;
+          span {
+            font-family: $notosans;
+            font-weight: normal;
+            font-size: 11px;
+            color: $medium-blue;
+            padding-left: 10px;
+            cursor: pointer;
+          }
+          .barrier {
+            border-right: 1px solid $mercury-solid;
+            padding-right: 10px;
+          }
+          .filterTitle {
+            font-family: $notosans;
+            font-size: 14px;
+            color: $mine-shaft;
+          }
+        }
+        .checkList {
+          padding-left: 50px;
+          label {
+            color: $gray;
+          }
+        }
+        .commonButton {
+          min-height: 33px;
+          padding-top: 20px;
+          padding-left: 4px;
+          padding-right: 4px;
+          button {
+            border-radius: 4px;
+          }
+        }
+        .dateInputContent {
+          margin-bottom: 12px;
+          .dateInput {
+            font-family: $notosans;
+            font-weight: normal;
+            font-size: 11px;
+            color: $gray;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid $iron;
+            width: 172px;
+            height: 30px;
+            background: $athens-gray;
+            background-image: url($calendar-sharp);
+            background-size: 16px 16px;
+            background-repeat: no-repeat;
+            background-position: 95%;
+          }
+        }
+        .sectionListHead {
+          display: flex;
+          cursor: pointer;
+          outline: none;
+        }
+        .sectionListHeadIcon {
+          padding-right: 12px;
+          outline: none;
+          .arrow {
+            width: 14px;
+            height: 18px;
+            cursor: pointer;
+            polyline {
+              stroke: $gray-600 !important;
+            }
+            vertical-align: top;
+          }
+        }
+      }
+    }
+
+    .slideIconContent {
+      display: flex;
+      height: 22px;
+      width: 26px;
+      box-shadow: 0px 0px 5px rgba($black, 0.039);
+      background: $white;
+      border: 1px solid $mercury;
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px;
+      margin-top: 10px;
+      padding-left: 4px;
+      outline: 0;
+      .arrow {
+        width: 18px;
+        height: 20px;
+        polyline {
+          fill: $lochmara;
+          stroke: $lochmara !important;
+        }
+      }
+    }
+  }
+  .RMcontainer {
+    width: 100%;
+    min-height: 110vh;
+    .RMTitle {
+      margin-top: 35px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .progress {
+        width: 550px;
+      }
+      .uploadBtn {
+        width: 132px;
+        height: 33px;
+        float: right;
+        margin-right: 15px;
+        position: relative;
+        .videoUploadInput {
+          cursor: pointer;
+          position: absolute;
+          left: 0;
+          top: 0;
+          opacity: 0;
+          width: 100%;
+          height: 100%;
+        }
+        svg {
+          fill: $white;
+          width: 20px;
+          height: 18px;
+        }
+        button {
+          min-height: 33px;
+        }
+      }
+      span {
+        font-family: $notosans;
+        font-size: 16px;
+        color: $mine-shaft;
+      }
+    }
+    h4 {
+      text-align: center;
+      margin-top: 150px;
+      display: block;
+      font-size: 14px;
+    }
+    .row {
+      display: flex;
+      width: 100%;
+      .box {
+        width: 23.66%;
+        height: 22.65vh;
+        background-color: $gray;
+        margin-right: 17px;
+        margin-bottom: 22px;
+        background: $white;
+        border-radius: 5px;
+        box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.102);
+        position: relative;
+        .boxImage {
+          width: 100%;
+          height: calc(100% - 8vh);
+          img {
+            width: 100%;
+            height: 100%;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            object-fit: cover;
+          }
+        }
+        .boxBottomContent {
+          height: 8vh;
+          .mediaTitle {
+            padding-top: 15px;
+            padding-left: 15px;
+            span {
+              font-family: $notosans;
+              font-size: 11px;
+              color: $mine-shaft;
+            }
+          }
+        }
+        .boxIconSection {
+          position: absolute;
+          bottom: 43px;
+          right: 5px;
+          .boxIconMainLayer {
+            width: 34px;
+            height: 34px;
+            border-radius: 17px;
+            background: $white;
+            .boxIconColorLayer {
+              width: 26px;
+              height: 26px;
+              border-radius: 13px;
+              position: absolute;
+              top: 4px;
+              left: 4px;
+              .icon {
+                width: 18px;
+                height: 16px;
+                position: absolute;
+                top: 4.5px;
+                left: 4px;
+                fill: $white;
+              }
+            }
+            .youtubeIconBG {
+              background: $youtubeBgColor;
+            }
+            .vimeoIconBg {
+              background: $vimeoBgColor;
+            }
+            .folderOpenIconBg {
+              background: $christi;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.videoUploadModal {
+  .videoUploadModalContent {
+    .modalHeader {
+      background: $white-smoke1;
+      position: relative;
+      button {
+        display: none;
+      }
+    }
+    .uploadLoader {
+      top: 40%;
+      left: 40%;
+    }
+    .customClose {
+      width: 30px;
+      height: 30px;
+      background: transparent;
+      border: none;
+      position: absolute;
+      right: -15px;
+      top: -15px;
+      cursor: pointer;
+      &:focus {
+        border: none;
+        outline: none;
+      }
+      svg {
+        width: 30px;
+        height: 30px;
+      }
+    }
+    .videoInputForm {
+      .formGroup,
+      .formGroupName,
+      .formGroupThumbnail {
+        input {
+          padding-left: 0;
+          padding-right: 0;
+          background: transparent;
+          height: 50px;
+          width: 100%;
+          border: none;
+          cursor: pointer;
+          &:focus {
+            border: none;
+            outline: none;
+            box-shadow: none;
+          }
+        }
+      }
+      .formGroup {
+        .progress {
+          width: calc(100% - 30px);
+        }
+        .uploadCancel {
+          width: 30px;
+          height: 30px;
+          background: transparent;
+          border: none;
+          cursor: pointer;
+          float: right;
+          margin-top: -22px;
+          &:focus {
+            border: none;
+            outline: none;
+          }
+          svg {
+            width: 30px;
+            height: 30px;
+          }
+        }
+      }
+      .formGroupName {
+        input {
+          padding-left: 14.4px;
+          padding-right: 14.4px;
+          background: $desert-storm;
+          height: 32px;
+          width: 100%;
+          border: 1px solid $iron;
+          cursor: unset;
+          &:focus {
+            border: 1px solid $iron;
+            outline: none;
+            box-shadow: none;
+          }
+        }
+      }
+    }
+    .modalFooter {
+      .commonButton {
+        background-color: $medium-blue;
+        border-color: $medium-blue;
+      }
+    }
+  }
+}
+
+.marginButton {
+  margin-bottom: 20px;
+}
+.extraMargin {
+  margin-left: 23px;
+}

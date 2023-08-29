@@ -1,0 +1,8 @@
+.git
+package-lock.json
+.eslintignore
+.prettierignore
+.gitignore
+*.fixtures.json
+src/libs/**
+node_modules/

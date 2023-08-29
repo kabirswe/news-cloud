@@ -1,0 +1,51 @@
+
+@import '../../scss/variables';
+
+.system-settings-container {
+    display: flex;
+    position: relative;
+    .left-sidenav {
+        background: $active_menu;
+        width: 100px;
+        height: calc(100vh - 60px);
+        position: fixed;
+        left: 100px;
+        top: 60px;
+        bottom: 0;
+        .active-sub-menu {
+            background: $dove_gray;
+        }
+    }
+    .right-content {
+        width: 100%;
+        position: relative;
+        margin-left: 100px;
+        height: calc(100vh - 60px);
+        overflow-y: auto;
+        scrollbar-width: thin;
+        scrollbar-color: rgba(217, 217, 217, 0.8) $white;
+        &::-webkit-scrollbar {
+          width: 7px;
+        }
+        &::-ms-scrollbar {
+          width: 7px;
+        }
+        &::-webkit-scrollbar-track {
+          background: $white;
+        }
+      
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+          background: $scrollbar-bg;
+          opacity: 0.6;
+          border-radius: 10px;
+        }
+      
+        /* Handle on hover */
+        &::-webkit-scrollbar-thumb:hover {
+          background: $scrollbar-bg;
+          opacity: 0.8;
+          border-radius: 10px;
+        }
+    }
+}

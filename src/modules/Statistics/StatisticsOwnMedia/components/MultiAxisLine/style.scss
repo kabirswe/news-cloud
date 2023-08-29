@@ -1,0 +1,30 @@
+.multi-axis-chart {
+    position: relative;
+    margin-right: 20px;
+    .left-label {
+        position: absolute;
+        left: -25px;
+        top: 35%;
+        transform: rotate(270deg);
+        color: #555555;
+        font-size: 14px;
+    };
+    .right-label {
+        position: absolute;
+        right: -40px;
+        top: 35%;
+        transform: rotate(270deg);
+        color: #555555;
+        font-size: 14px;
+    }
+
+}
+
+.multi-axis-chart {
+    width: 95%;
+    height: 100%;
+    #multi-axis-line-chart {
+        width: 100%;
+        height: 100%;
+    }
+}

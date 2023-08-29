@@ -1,0 +1,13 @@
+.git
+.gitattributes
+scripts
+.editorconfig
+.eslintignore
+.eslintrc
+.gitignore
+.prettierignore
+.prettierrc
+Dockerfile
+package-lock.json
+.Dockerfile.swp
+node_modules/

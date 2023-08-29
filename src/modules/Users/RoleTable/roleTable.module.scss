@@ -1,0 +1,111 @@
+@import '../../../scss/variables';
+@import '../../../scss/mixins';
+.tableWrapper {
+  border: 1px solid $table_border_color;
+  border-radius: 4px;
+}
+
+.table {
+  margin-bottom: 0;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(217, 217, 217, 0.8) $white;
+  &::-webkit-scrollbar {
+    height: 7px;
+  }
+  &::-ms-scrollbar {
+    height: 7px;
+  }
+  &::-webkit-scrollbar-track {
+    background: $white;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: $scrollbar-bg;
+    opacity: 0.8;
+    border-radius: 10px;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: $scrollbar-bg;
+    opacity: 0.8;
+    border-radius: 10px;
+  }
+  table {
+    tbody {
+      display: block;
+      max-height: 180px;
+      overflow: auto;
+      scrollbar-width: thin;
+      scrollbar-color: rgba(217, 217, 217, 0.8) $white;
+      &::-webkit-scrollbar {
+        width: 7px;
+      }
+      &::-ms-scrollbar {
+        width: 7px;
+      }
+      &::-webkit-scrollbar-track {
+        background: $white;
+      }
+
+      /* Handle */
+      &::-webkit-scrollbar-thumb {
+        background: $scrollbar-bg;
+        opacity: 0.8;
+        border-radius: 10px;
+      }
+
+      /* Handle on hover */
+      &::-webkit-scrollbar-thumb:hover {
+        background: $scrollbar-bg;
+        opacity: 0.8;
+        border-radius: 10px;
+      }
+    }
+    thead,
+    tbody tr {
+      display: table;
+      width: 100%;
+      table-layout: fixed;
+      td {
+        width: 200px;
+      }
+    }
+    thead {
+      tr {
+        th {
+          width: 200px;
+          border-bottom: none;
+          border-top: none;
+          @include font_style(12px, $label_gray, normal, 14px);
+          text-align: center;
+          text-transform: capitalize;
+          height: 43px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          &:first-child {
+            text-align: left;
+            padding-left:65px;
+          }
+          &:nth-child(2) {
+            padding-left: 0;
+          }
+        }
+        td{
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+.invitationBtn {
+  @include font_style(13px, $white, null, 16px);
+  background-color: $lochmara;
+  width: 133px;
+  height: 40px;
+  margin-top: 15px;
+  margin-left: 10px;
+}

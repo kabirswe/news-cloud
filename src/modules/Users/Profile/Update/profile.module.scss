@@ -1,0 +1,144 @@
+@import '../../../../scss/variables';
+@import '../../../../scss/mixins';
+
+.container {
+  margin-top: 27px;
+  min-height: 278px;
+  padding: 10px 0;
+  width: 100%;
+  align-items: center;
+  background-color: $background-gray;
+}
+
+.profileImg {
+  width: 140px;
+  height: 140px;
+}
+.customBreadCrumb{
+  padding-left:8px;
+}
+.userProfileContainer {
+  margin-top: 32px;
+  margin-left: 25px;
+}
+.headerText{
+  @include font_style(16px, $mine-shaft, $medium, 19.2px);
+  margin-bottom: 6px;
+}
+.userProfileheader {
+  width: 100%;
+  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  p {
+    margin-bottom: 0;
+    &:last-child {
+      @include font_style(12px);
+      padding-top: 6px;
+    }
+  }
+}
+
+.email {
+  position: relative;
+  @include font_style(14px, $label_gray, null, 16.8px);
+}
+.profileInput {
+  margin-bottom: 12px;
+  label {
+    padding-top: 8px;
+    width: 212px !important;
+    font-family: $notosans;
+    color:$label_gray !important;
+    @include font_style(13px, $label_gray, null, 16.8px);
+    .text-danger{
+      color:$red !important;
+    }
+  }
+  input {
+    background: $white;
+    width: 42.9vw;
+    height: 31px;
+    border-radius: 4px;
+    font-style: normal;
+    @include font_style(13px, $label_gray, normal, 15px);
+    border: 1px solid $iron;
+    padding: 0 14px;
+  }
+}
+.profileInputField {
+  width: 42.9vw;
+  height: 31px;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  margin-left: 100px;
+  font-family: $notosans;
+  font-style: normal;
+  @include font_style(13px, $label_gray, normal, 15px);
+  border: 1px solid $iron;
+  padding: 0 14px;
+  &:focus {
+    box-shadow: none;
+    border: none;
+    outline: none;
+    border: 1px solid $iron;
+  }
+}
+
+.successAlert {
+  padding-left: 68px;
+  padding-bottom: 15px;
+}
+
+.hasFormError {
+  border: 1px solid $torch-red;
+}
+
+.helperText {
+  @include font_style(13px, $torch-red);
+  margin-left: 200px;
+  padding-bottom: 10px;
+  margin-top: -8px;
+}
+
+.profileLabel {
+  margin-bottom: 24px;
+  width: 112px;
+  @include font_style(13px, $label_gray, null, 15px);
+  font-family: $notosans;
+}
+
+.requiredLevel {
+  color: $torch-red;
+}
+
+.profileButton {
+  width: 86px;
+  height: 40px;
+  margin-top: 2px;
+  background-color: $medium-blue;
+  margin-left: 212px;
+  border-radius: 6px;
+  @include font_style(14px, $white, $medium, 16.8px);
+  border: none;
+  &:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+.imagePadding {
+  padding-left: 60px !important;
+}
+
+.labelPadding {
+  padding-left: 82px !important;
+}
+
+@media only screen and (min-width: 1800px) {
+  .profileButton {
+    margin-left: 11vw;
+  }
+}

@@ -1,0 +1,12 @@
+{
+    "translation": {
+        "USER_PROFILE": {
+            "HEADING_TEXT": "プロフィール",
+            "LABEL_USERNAME": "ユーザー名",
+            "LABEL_NAME": "氏名",
+            "LABEL_PASSWORD": "パスワード",
+            "LABEL_CONFIRMATION": "パスワード確認",
+            "SUBMIT_BUTTON": "保存"
+        }
+    }
+}

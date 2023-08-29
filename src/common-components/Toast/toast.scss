@@ -1,0 +1,77 @@
+@import "../../scss/variables";
+
+.alert {
+    button {
+        &:focus {
+            outline: none !important;
+        }
+    }
+}
+.alert-default {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    font-family: $notosans;
+    font-size: 14px;
+    margin: 10px 0;
+    .close {
+        position: absolute;
+    right: 10px;
+    bottom: 8px;
+    }
+   svg {
+       width: 20px;
+       height: 20px;
+   }
+}
+
+.icon-default {
+    width: 20px;
+    height: 20px;
+}
+
+.nc-alert-success {
+    @extend .alert-default;
+    color: $success;
+    background: $success-bg;
+    svg {
+        line {
+            stroke: $success !important;
+        }
+    }
+}
+
+.nc-alert-info {
+    @extend .alert-default;
+    color: $info;
+    background: $info-bg;
+    svg {
+        line {
+            stroke: $info !important;
+        }
+    }
+   
+}
+
+.nc-alert-warning {
+    @extend .alert-default;
+    color: $warning;
+    background: $warning-bg;
+    svg {
+        line {
+            stroke: $warning !important;
+        }
+    }
+}
+
+.nc-alert-error {
+    @extend .alert-default;
+    color: $error;
+    background: $error-bg;
+    svg {
+        line {
+            stroke: $error !important;
+        }
+    }
+}

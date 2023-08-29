@@ -1,0 +1,86 @@
+@import '../../../scss/variables';
+@import '../../../scss/mixins';
+
+.sns-container {
+    display: grid;
+    width: 100%;
+    padding: 0 30px;
+    // padding-top: 32px;
+    margin-bottom: 32px;
+    .title {
+        font-family: $notosans;
+        font-style: normal;
+        @include font_style(16px, $mine-shaft, $medium, 19.2px);
+        margin-bottom: 21px;
+    }
+    .facebook-section,
+    .twitter-section,
+    .line-section {
+        width: 100%;
+        .input-container {
+            width: 100%;
+            min-height: 136px;
+            background: $background-gray;
+            padding: 30px 29px 30px 32px;
+            .input-content {
+                display: flex;
+                width: 100%;
+                display: flex;
+                margin-bottom: 12px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                .input-label {
+                    font-family: $notosans;
+                    font-style: normal;
+                    @include font_style(13px, $label_gray, normal, 15px);
+                    width: 185px;
+                    padding-top: 7px;
+                }
+                label {
+                    @include font_style(13px, $label_gray, normal, 15.5px);
+                    width: 185px;
+                    padding-top: 7px;
+                }
+                .user-input {
+                    width: 100%;
+                    .input-div {
+                        width: 100%;
+                    }
+                    input {
+                        height: 32px;
+                        min-height: 32px;
+                        background: $white;
+                        @include font_style(12px, $label_gray,normal);
+                    }
+                }
+            }
+        }
+        .top-head {
+            margin-bottom: 11px;
+            .head-title {
+                font-family: $notosans;
+                @include font_style(14px, $mine-shaft, $medium, 16px);
+                margin-left: 11px;
+            }
+        }
+        .top-head:first-child{
+            img{
+                margin-top: -3px;
+            }
+        }
+    }
+    .twitter-section,
+    .line-section {
+        margin-top: 27px;
+    }
+    .submit-button {
+        margin-top: 14px;
+        display: flex;
+        justify-content: flex-end;
+        button {
+            width: 93px;
+            @include font_style(14px, $white, $medium, 16.8px);
+        }
+    }
+}

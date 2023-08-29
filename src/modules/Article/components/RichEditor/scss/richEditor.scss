@@ -1,0 +1,47 @@
+@import '../../../../../scss/variables';
+// .modal-open {
+//   overflow: unset !important;
+// }
+
+.nkRichEditorWrapper {
+  background: white;
+  .nkRichEditor {
+    border: 1px solid hsl(0, 0%, 95%);
+    margin-top: 10px;
+    min-height: 525px;
+    max-height: 530px;
+    .DraftEditor-root {
+      margin-top: -16px;
+      .DraftEditor-editorContainer {
+        padding: 10px;
+        .public-DraftEditor-content {
+          background: #fff;
+          min-height: 100px;
+        }
+      }
+    }
+  }
+  .nkRichEditorToolbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    padding-left: 10px;
+    // .rdw-block-dropdown, .rdw-fontfamily-dropdown {
+    //   border: none;
+    //   border-right: 1px solid gray;
+
+    // }
+    .rdw-option-wrapper {
+      margin: 0;
+      height: 30px;
+      min-width: 25px;
+      border-radius: 0;
+    }
+    .rdw-dropdown-wrapper {
+      margin: 0;
+      border-radius: 0;
+    }
+    .rdw-embedded-modal{
+      height: 200px;
+    }
+  }
+}

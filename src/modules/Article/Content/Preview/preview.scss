@@ -1,0 +1,72 @@
+@import '../../../../scss/variables';
+@import '../../../../scss/mixins';
+
+
+.article-preview-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0 19%;
+  .date-area {
+    display: flex;
+    justify-content: center;
+    time {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 30px;
+      background-color: #1F9DF3;
+      color: #fff;
+      width: 75px;
+      font-size: 10px;
+      text-align: center;
+    }
+  }
+  .tags {
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
+    &:hover {
+      color: #1F9DF3;
+    }
+    span {
+      display: block;
+      font-size: 12px;
+      pointer-events: auto;
+      padding-right: 5px;
+      cursor: pointer;
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+  .title {
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-top: 30px;
+    word-break: break-word;
+    text-align: center;
+  }
+  .description {
+    font-size: 14px;
+    margin-top: 40px;
+    word-break: break-all;
+    div {
+      text-align: center;
+    }
+    img{
+      max-width: 100%;
+    }
+    iframe {
+      width: 700px !important;
+      height: 400px !important;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  .description > img {
+    // display: block;
+    // margin: 0 auto;
+  }
+}

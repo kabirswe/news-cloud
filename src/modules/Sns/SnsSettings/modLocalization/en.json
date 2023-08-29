@@ -1,0 +1,48 @@
+{
+    "translation": {
+        "SYSTEM_SETTINGS": {
+            "SNS_SETTINGS_TITLE": "SNS Setting",
+            "FACEBOOK_TITLE": "Facebook",
+            "TWITTER_TITLE": "Twitter",
+            "LINE_TITLE": "Line",
+            "YOUTUBE": "YouTube",
+            "VIMEO": "Vimeo",
+            "YOUTUBE_CLIENT_ID": "Client ID",
+            "YOUTUBE_CLIENT_SECRET": "Client Secret",
+            "TWITTER_CLIENT_API_INPT": "Client API key",
+            "TWITTER_ACCESS_TOKEN": "Access token",
+            "TWITTER_ACCESS_TOKEN_SECRET": "Access token secret",
+            "LINE_CHANNEL_ID": "Channel ID",
+            "LINE_CHANNEL_SECRET": "Channel secret",
+            "INPUT_LABEL_FACEBOOK": "App ID",
+            "INPUT_LABEL_FACEBOOK_SECRET": "App Secret",
+            "LOCATION_SETTINGS_TITLE": "動画プラットフォーム",
+            "FACEBOOK_APP_ID_PLACEHOLDER":"アプリIDを入力してください",
+            "FACEBOOK_APP_SECRETE_PLACEHOLDER":"アプリの秘密を入力してください",
+            "TWITTER_API_KEY_PLACEHOLDER":"APIキーを入力",
+            "TWITTER_ACCESS_TOKEN_PLACEHOLDER":"アクセストークンを入力してください",
+            "TWITTER_ACCESS_TOKEN_SECRET_PLACEHOLDER":"アクセストークンシークレットを入力してください",
+            "LINE_CHANNEL_ID_PLACEHOLDER":"チャンネルIDを入力してください",
+            "LINE_CHANNEL_SECRET_PLACEHOLDER":"チャンネルシークレットを入力してください",
+            "SNS_ERROR_MSG": {
+                "FACEBOOK_APP_ID": "App ID field is required.",
+                "FACEBOOK_APP_SECRET": "App secret field is required.",
+                "LINE_CHANNEL_ID": "Channel ID field is required.",
+                "LINE_CHANNEL_SECRET": "Channel secret field is required.",
+                "TWITTER_API_KEY": "Client api key field is required",
+                "TWITTER_ACCESS_TOKEN": "Client access token  field is required",
+                "TWITTER_TOKEN_SECRET": "Client token secret  field is required",
+                "YOUTUBE_CLIENT_ID": "Client ID field is required",
+                "YOUTUBE_CLIENT_SECRET": "Client secret field is required",
+                "VIEMO_CLIENT_ID": "Client ID field is required",
+                "VIEMO_CLIENT_SECRET": "Client secret field is required",
+                "VIMEO_ACCESS_TOKEN": "Access token field is required",
+                "INPUT_ERROR" : "Please provide at least one input"
+            }
+        },
+        "SYSTEM_ROLES": {
+            "WARNING": "Each role must have at least one selected permission",
+            "SUCCESS": "Updated"
+        }
+    }
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "id": "1",
+    "option": "全員",
+    "disable": 1
+  },
+  {
+    "id": "2",
+    "option": "全員1",
+    "disable": 1
+  },
+  {
+    "id": "3",
+    "option": "公開",
+    "disable": 0
+  },
+  {
+    "id": "4",
+    "option": "test",
+    "disable": 1
+  }
+]

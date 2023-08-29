@@ -1,0 +1,40 @@
+{
+  "translation": {
+    "MEMBER": {
+      "PAGE_TITLE": "Member List",
+      "MEMBER_ID": "Member ID",
+      "FULL_NAME": "Name",
+      "MEMBER_NAME": "Member name",
+      "MAIL_ADDRESS": "Mail address",
+      "INVITATION_FIELD": "Invitation",
+      "FIRST_DAY": "First day",
+      "PARTICIPATION_DAY": "Participation date",
+      "PERMISSION": {
+        "PAGE_TITLE": "Member management"
+      },
+      "INVITATION": "招待",
+      "MEMBER_ADDITION": "会員追加",
+      "CSV_DOWNLOAD": "CSV ダウンロード",
+      "CSV_addition": "CSV追加",
+      "CSV_delete": "CSV削除",
+      "ADD": {
+        "PAGE_TITLE": "会員追加",
+        "PAGE_TITLE_EDIT": "会員編集",
+        "LABEL_PASSWORD": "パスワード",
+        "LABEL_CONFIRMATION": "パスワード確認",
+        "SUBMIT_BUTTON": "保存",
+        "DELETE_BUTTON": "削除"
+      },
+      "MODAL_TITLE": "削除確認メッセージ",
+      "MODAL_TITLE_INVITE": "招待確認メッセージ",
+      "DELETE_TEXT": "Are you sure to delete this member?",
+      "DELETE_TEXT_CSV": "CSVファイル通り会員データを削除します。よろしいですか？",
+      "INVITE_TEXT": "選択した会員に招待メールを送信します。よろしいですか？",
+      "MEMBER_REQUIRED_TEXT": "Please select member for invitation.",
+      "CSV_ERROR": {
+        "FORMAT": "Wrong file format. please use csv file format",
+        "SIZE": "Please select a file size less than 2MB."
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+    "translation": {
+      "ROLES": {        
+        "WARNING": "各役割には、少なくとも1つの選択された権限が必要です。",
+        "SUCCESS": "更新しました",
+        "ALREADY_EXIST": "同じロールが存在しています。",
+        "UNSAVED_CHANGES": "ロールの入力は必須です",
+        "CREATE_ROLE": "作成",
+        "SAVE": "保存",
+        "MAX_LENGTH": "文字 1-50",
+        "ALPHA_NUMEIC": "番号は不許可です。",
+        "NUMBER_NOT_ALLOWED": "番号は不許可です。",
+        "SYSTEM_SETTING":"システム設定",
+        "BREAD_CRUMB_TITLE":"ロール設定",
+        "ADD_ROLE":"ロール追加",
+        "ROLE_NAME":"ロール名",
+        "ROLE_NAME_PLACEHOLDER":"ロール名を入力",
+        "CANCEL":"キャンセル",
+        "ROLE_LIMIT_EXCEED":"ロールは最大15件まで作成できます。",
+        "UPDATE":"保存",
+        "EDIT_ROLE":"役割を編集"
+      }
+    }
+  }

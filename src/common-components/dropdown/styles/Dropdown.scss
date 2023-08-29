@@ -1,0 +1,19 @@
+@import '../../../scss/variables';
+
+.common-dropdown {
+  width: 100%;
+  min-height: 30px;
+  font-family: $notosans;
+  font-weight: normal;
+  font-size: 11px;
+  color: $gray;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid $iron;
+  background: $athens-gray;
+  appearance: none;
+  background-image: url('../assets/dropicon.svg');
+  background-repeat: no-repeat;
+  background-position: 97%;
+  outline: unset;
+}

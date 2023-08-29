@@ -1,0 +1,241 @@
+@import '../../../scss/variables';
+@import '../../../scss/mixins';
+
+.mailMagazineComponent {
+  padding: 0px 15px 15px 14px;
+  .pageTitle {
+    padding-top: 15px;
+    padding-left: 15px;
+    @include font_style(16px, $mine-shaft, $medium, 19.2px);
+  }
+  .pageHeading {
+    margin-top: 5px;
+    .mailGroup {
+      @include font_style(16px, $mine-shaft, $medium, 19.2px);
+    }
+    margin-bottom: 10px;
+  }
+  .tableWrapper {
+    border-radius: 4px;
+  }
+}
+.emailBodyWrapper {
+  border: 1px solid $mercury;
+  border-radius: 7px;
+  font-size: 13px;
+  text-align: center;
+  height: 555px;
+  line-height: 50;
+}
+.addGroupBtn {
+  border: 2px solid $article_link_menu;
+  border-radius: 4px;
+  padding: 0px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 33px;
+  position: relative;
+  margin-right: 5px;
+  cursor: pointer;
+  color: $article_link_menu;
+  font-size: 12px;
+  font-family: $notosanMedium;
+  line-height: 14.4px;
+  width: 130px;
+  svg {
+    width: 16px;
+    height: 16px;
+    fill: $article_link_menu;
+    color: $white;
+  }
+  span {
+    margin-left: 6px;
+    @include font_style(12px, $article_link_menu, $medium, 14.4px);
+  }
+}
+.mailCheckbox {
+  display: flex;
+}
+
+.rightButtonArea {
+  height: 34px;
+  display: flex;
+  margin-top: 22px;
+}
+.customBtn {
+  width: unset !important;
+  padding: 0px 20px !important;
+  border-radius: 4px;
+  outline: none;
+  height: 32px;
+  margin-right: 0px !important;
+  &:focus {
+    border: 0px;
+    outline: none;
+  }
+}
+.dangerBtn {
+  @include commonDangerButton();
+  width: 71px !important;
+  @include font_style(12px, $white, $medium, 14.4px);
+}
+.deleteConfirm {
+  padding-bottom: 20px;
+  text-align: left;
+  font-size: 14px;
+  font-family: $notosans;
+  color: $label_gray;
+}
+.customClose {
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border: none;
+  position: absolute;
+  right: -15px;
+  top: -15px;
+  cursor: pointer;
+  &:focus {
+    border: none;
+    outline: none;
+  }
+  svg {
+    width: 30px;
+    height: 30px;
+    width: 30px;
+    height: 30px;
+    background-color: #f8f9fa;
+    border-radius: 999px;
+    background-position: center;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+  }
+}
+.groupInput {
+  display: flex;
+  margin-bottom: 10px;
+  .inputLabel {
+    width: 110px;
+    font-size: 12px;
+    font-family: $notosans;
+  }
+  .input {
+    width: calc(100% - 110px);
+    &:focus::placeholder {
+      color: transparent;
+    }
+  }
+}
+.commonButton {
+  width: 105px !important;
+  height: 40px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-family: $notosans;
+  line-height: 16.8px;
+  outline: none !important;
+  border-radius: 5px;
+  &:focus {
+    outline: none;
+    border: 0;
+  }
+}
+.serverResult {
+  font-size: 12px;
+  font-family: $notosans;
+}
+.modalHeader {
+  height: 46px !important;
+  background: $white-smoke1;
+  border-bottom: 0px !important;
+  h5 {
+    font-size: 14px;
+    font-family: $notosanMedium;
+    color: $article_link_menu !important;
+    line-height: 16.8px;
+  }
+  .modal-title {
+    font-size: 14px;
+    font-family: $notosanMedium;
+  }
+}
+.groupMailModal {
+  width: 452px !important;
+}
+.modalBody {
+  padding-bottom: 0px !important;
+}
+.modalFooter {
+  border: 0px !important;
+  padding-top: 0px !important;
+  padding-bottom: 25px !important;
+  margin-top: 0px !important;
+  justify-content: flex-end !important;
+}
+
+.modalFooterDelete {
+  border: 0px !important;
+  padding-top: 0px !important;
+  padding-bottom: 25px !important;
+  margin-top: 0px !important;
+  justify-content: center !important;
+}
+.paddingTop {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.groupDetailsAddEmailBtn {
+  border: 2px solid $article_link_menu;
+  border-radius: 4px;
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 33px;
+  cursor: pointer;
+  svg {
+    width: 16px;
+    height: 16px;
+    fill: $article_link_menu;
+    color: $white;
+  }
+  span {
+    margin-left: 6px;
+    font-size: 12px;
+    font-family: $notosanMedium;
+  }
+}
+.rightSideMenu {
+  display: flex;
+  margin-top: 24px;
+  margin-bottom: 10px;
+}
+.groupEditSaveBtn {
+  margin-top: 37px;
+}
+.notFoundData {
+  text-align: center;
+  font-size: 14px;
+  font-family: $notosans;
+  margin: 120px auto;
+}
+body {
+  padding-right: 0 !important;
+}
+.dataTableList {
+  min-height: 300px;
+}
+.mailGroup_mailMagazineComponent__eWWAk {
+  padding: 0px 15px;
+}
+.disabledBtn {
+  cursor: not-allowed !important;
+  opacity: 0.3;
+  &:active {
+    pointer-events: none;
+  }
+}

@@ -1,0 +1,19 @@
+{
+    "translation": {
+        "USER_PROFILE": {
+            "HEADING_TEXT": "プロフィール",
+            "LABEL_USERNAME": "ユーザー名",
+            "LABEL_NAME": "氏名",
+            "LABEL_PASSWORD": "パスワード",
+            "LABEL_CONFIRMATION": "パスワード確認",
+            "SUBMIT_BUTTON": "保存",
+            "EMAIL_REQUIRED": "メールアドレスを入力してください。",
+            "EMAIL_NOT_VALID": "入力されたメールアドレスは無効です。",
+            "ID_NOT_VALID": "IDが無効です",
+            "FIELD_REQUIRED": "必要事項を入力してください",
+            "PASSWORD_NOT_MATCHED": "入力されたパスワードが一致しません。",
+            "PASSWORD_LENGTH": "パスワードは英数字で8〜32文字にする必要があります。",
+            "CONFIRM_PASSWORD_REQUIRED": "パスワードを確認欄に入力してください。"
+        }
+    }
+}

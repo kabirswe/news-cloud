@@ -1,0 +1,34 @@
+@import 'src/scss/variables';
+@import 'src/scss/mixins';
+
+.profilePasswordStrength {
+  .progress {
+    margin-left: 200px;
+    width: 42.5vw;
+    margin-top: -10px;
+    height: 4px;
+    margin-bottom: 10px;
+    .progress-bar-strong {
+      background: $lima;
+    }
+    .progress-bar-medium {
+      background: $turbo;
+    }
+    .progress-bar-weak {
+      background: $red;
+    }
+  }
+}
+
+/*
+  ##Device = Smart Phone (portrait)
+  ##Screen = B/w screen to 1370px
+*/
+@media screen and (max-width: 1370px) {
+  .auth-container-main {
+    height: calc(100vh - 65px);
+    .auth-container {
+      margin-top: 65px;
+    }
+  }
+}

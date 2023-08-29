@@ -1,0 +1,190 @@
+@import '../../../../../scss/variables';
+
+
+.modalVideos {
+  max-width: 646px !important;
+  .modal-body {
+   
+    overflow-x: hidden;
+  }
+
+
+  .modal-header {
+    padding: 0;
+    background-color: $white-smoke1;
+    border-bottom: 0;
+    height: 46px;
+    .modal-title {
+      font-size: 14px;
+      font-weight: $medium;
+      line-height: 30px;
+      padding: 10px 15px;
+      color: $medium-blue;
+      padding-left: 25px;
+    }
+    .close {
+      background:$mine-shaft;
+      color: #fff;
+      border-radius: 50%;
+      padding: 3px;
+      margin: -13px;
+      font-size: 18px;
+      opacity: 1;
+    }
+    .custom-close {
+      width: 30px;
+      height: 30px;
+      background: transparent;
+      border: none;
+      position: absolute;
+      right: -15px;
+      top: -15px;
+      cursor: pointer;
+      &:focus {
+        border: none;
+        outline: none;
+      }
+      svg {
+        width: 30px !important;
+        height: 30px !important;
+        background-color: #f8f9fa !important;
+        border-radius: 100% !important;
+        background-position: center;
+        background-size: 20px 20px;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+
+  .modal-body {
+    padding: 0;
+    height: auto;
+    padding-bottom: 30px;
+    .table-responsive {
+      .nc-data-table {
+        div {
+          .rdt_Table {
+            .rdt_TableBody {
+              max-height: 400px;
+            }
+          }
+        }
+      }
+    }
+    .table {
+      margin-bottom: 0;
+      thead {
+        th {
+          border-bottom: 1px solid #dee2e6;
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 14px;
+          color: $label_gray;
+          padding: 1rem 0;
+          &:first-child {
+            padding-left: 25px;
+          }
+          span {
+            cursor: pointer;
+          }
+          svg{
+            position: relative;
+            bottom: 2px;
+           
+          }
+        }
+      }
+      thead,
+      tbody tr {
+        display: table;
+        width: 100%;
+        table-layout: fixed;
+      }
+      tr{
+        td{
+          &:first-child {
+            padding-left: 25px;
+          }
+         
+        }
+      }
+      tbody {
+        display: block;
+        max-height: 257px;
+        min-height: 100px;
+        margin-right: 2px;
+        padding-bottom: 0px;
+        overflow: auto;
+        scrollbar-width: thin;
+        scrollbar-color: rgba(217, 217, 217, 0.8) $white;
+        td {
+          border-bottom: .5px solid $mercury !important;
+          border-top: none;
+        }
+        tr {
+         
+          &:nth-of-type(odd) {
+            background: $desert-storm !important;
+          }
+          
+        }
+        &::-webkit-scrollbar {
+          width: 7px;
+        }
+        &::-ms-scrollbar {
+          width: 7px;
+        }
+        &::-webkit-scrollbar-track {
+          background: $white;
+        }
+        td {
+          vertical-align: middle;
+          height: 43px;
+        }
+    
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+          background: $scrollbar-bg;
+          opacity: 0.8;
+          border-radius: 10px;
+        }
+    
+        /* Handle on hover */
+        &::-webkit-scrollbar-thumb:hover {
+          background: $scrollbar-bg;
+          opacity: 0.8;
+          border-radius: 10px;
+        }
+        tr {
+          cursor: pointer;
+        }
+        td {
+          border-bottom: 1px solid #dee2e6;
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 14px;
+          color: $label_gray;
+          padding: 1rem;
+          vertical-align: middle;
+          padding: 5px;
+
+          .video-thumb {
+            img {
+              height: 40px;
+              width: 70px;
+            }
+          }
+        }
+        .tr-selected {
+          border-left: 5px solid $medium-blue;
+          outline: none;
+        }
+      }
+    }
+  }
+}
+

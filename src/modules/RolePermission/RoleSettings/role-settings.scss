@@ -1,0 +1,37 @@
+@import '../../../scss/variables';
+.create-new-role {
+  .button-groups {
+    display: flex;
+    justify-content: flex-end;
+    button {
+      margin-left: 10px;
+    }
+  }
+}
+.create-role-btn {
+  margin-top: 5px;
+}
+.role-warning,
+.role-success {
+  line-height: 30px;
+  text-align: center;
+  color: $white;
+}
+
+.system-roles {
+  table {
+    thead {
+      tr {
+        th {
+          &:first-child {
+            padding-left: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.role-error {
+  border: 1px solid red !important;
+}

@@ -1,0 +1,306 @@
+@import 'src/scss/variables';
+@import 'src/scss/mixins';
+
+
+.memberComponent {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  padding: 0 15px;
+
+  .pageHeading {
+    //padding-top: 15px;
+    padding-bottom: 9px;
+    .pageTitle {
+      font-size: 16px;
+    }
+  }
+  .tableWrapper {
+    border: 1px solid $mercury;
+    border-radius: 7px;
+    .table {
+      margin-bottom: 0;
+      height: 555px;
+      overflow-x: hidden;
+
+      thead {
+        tr {
+          th {
+            border-bottom: none;
+            border-top: none;
+            font-size: 12px;
+            line-height: 14px;
+            color: $boulder;
+            font-weight: 500;
+            &:nth-child(1) {
+              text-align: left;
+              padding-left: 20px;
+            }
+          }
+        }
+      }
+
+      tbody {
+        tr {
+          td {
+            font-size: 12px;
+            line-height: 14px;
+            color: $boulder;
+            font-weight: normal;
+            margin-bottom: 0px;
+            &:nth-child(1) {
+              line-height: 20px;
+              text-align: left;
+              padding-left: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .ncCheckbox {
+    label {
+      padding-left: 0px !important;
+    }
+  }
+  .memberBtnContent {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 20px;
+
+    .memberBtnContentSpace {
+      display: flex;
+      width: 446px;
+      justify-content: space-between;
+      .commonButton {
+        //padding-left: 8px;
+        button {
+          border-radius: 4px;
+          min-height: 33px !important;
+          font-size: 12px;
+          position: relative;
+          @include font_style(12px, null, $medium, 14.4px);
+          :global {
+            .spinner_spinnerLoader__3Z5aC {
+              top: 6px !important
+            }
+          }
+        }
+        .icon {
+          margin-right:5px;
+          width: 18px;
+          height: 14px;
+          @include svgAllSectionColorFill($medium-blue);
+        }
+      }
+      .invite{
+        button {
+          width: 86px;
+          padding-top:3px;
+        }:global {
+           .csvLoder {
+             width: 103px !important;
+           }
+         }
+      }.addMember{
+        button {
+          width: 99px;
+          padding-top:3px;
+          padding-top:3px;
+        }
+      }.download{
+        button {
+          width: 133px;
+        }:global {
+           .csvLoder {
+             width: 144px !important;
+             display: flex;
+             align-items: center;
+             padding-left: 10px;
+           }
+         }
+      }.csvAdd{
+        button {
+          width: 87px;
+        } :global {
+           .csvLoder {
+             width: 95px !important;
+             display: flex;
+             align-items: center;
+             padding-left: 10px;
+            }
+         }
+
+      }
+
+    }
+  }
+  .nc-data-table .rdt_Table .rdt_TableBody .rdt_TableRow .rdt_TableCell {
+    max-width: 160px !important;
+  }
+
+  .emptyContainer{
+    min-height: 400px;
+  }
+  .memberPagination {
+    :global {
+      .nc-data-table {
+        //min-height: 200px !important;
+      }
+      //.kDSQmh {
+      //  padding-left: 0px;
+      //  margin-left: 0px;
+      //  padding-top: 0px;
+      //  justify-content: flex-start !important;
+      //}
+      //.dSXKyS {
+      //  @extend .kDSQmh;
+      //}
+      .rdt_Pagination {
+        padding-left: 0px;
+        margin-left: 0px;
+        padding-top: 0px;
+        justify-content: flex-start !important;
+        .ncoBp {
+          margin-left: 0px !important;
+        }
+      }
+      .embYcA:hover {
+        background: none !important;
+      }
+      .embYcA:focus {
+        background: none !important;
+        outline: none !important;
+      }
+      .embYcA:hover:not {
+        background: none !important;
+      }
+    }
+  }
+  .memberDeleteContent {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: -41px !important;
+    position: absolute;
+    right: 15px;
+
+    .deleteText {
+      display: flex;
+      font-size: 12px !important;
+      align-items: center;
+      justify-content: space-between;
+      width: 426px;
+      .hide{
+        visibility: hidden;
+      }
+      input {
+        margin-right: 10px !important;
+      }
+      .custom-control-label {
+        padding-left: 30px;
+        margin-left: 10px;
+      }
+      span {
+        margin-top: 2px;
+        color: $gray;
+        font-size: 12px;
+        margin-left: 20px;
+        letter-spacing: 0.3px;
+      }
+    }
+    .csvDelete {
+      button {
+        width: 85px;
+      } :global {
+          .csvLoder {
+            width: 95px !important;
+            display: flex;
+            align-items: center;
+            padding-left: 10px;
+          }
+        }
+    }
+  }
+
+}
+
+.memberFormComponent {
+  margin-top: 32px;
+  margin-left: 25px;
+}
+
+.profileInputField {
+  width: 40vw;
+  height: 31px;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  font-family: $notosans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+  color: $label_gray;
+  border: 1px solid $iron;
+  padding-left: 14px;
+  margin-left: 25px;
+  &:focus {
+    box-shadow: none;
+    border: none;
+    outline: none;
+    border: 1px solid $iron;
+  }
+}
+
+.hasFormError {
+  border: 2px solid $red;
+}
+
+.helperText {
+  color: $red;
+  margin-left: 200px;
+  padding-bottom: 10px;
+  margin-top: -8px;
+  font-size: 13px;
+}
+
+.profileLabel {
+  margin-bottom: 24px;
+  width: 112px;
+  font-size: 13px;
+  line-height: 15px;
+  color: $label_gray;
+  font-family: $notosans;
+}
+
+.requiredLevel {
+  color: $red;
+}
+
+.profileButton {
+  width: 127px;
+  height: 40px;
+  margin-top: 2px;
+  background-color: $medium-blue;
+  margin-left: 140px;
+  color: $white;
+  border-radius: 6px;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: $notosans;
+  border: none;
+  &:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+.labelPadding {
+  padding-left: 82px !important;
+}
+
+@media only screen and (min-width: 1800px) {
+  .profileButton {
+    margin-left: 11vw;
+  }
+}

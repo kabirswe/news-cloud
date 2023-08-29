@@ -1,0 +1,63 @@
+@import '../../../../scss/variables';
+
+.ncDropDownWrapper {
+  position: relative;
+  bottom: 10px;
+  left: 13px;
+}
+.ncDropDown {
+  background: none !important;
+  border: none !important;
+  padding: 0 !important;
+  &:focus {
+    background: none !important;
+    outline: !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+}
+.dropDownMenu {
+  top: 24px !important;
+  left: 0 !important;
+  background-color: $white;
+  border-radius: 6px !important;
+  min-width: 138px !important;
+  padding: 0 !important;
+  transform: translate3d(-150px, 15px, 0px) !important;
+  button {
+    min-height: 36px;
+    font-size: 12px !important;
+    color: $label_gray;
+    &:hover {
+      color: $label_gray;
+      background-color: $notification_hover_background;
+    }
+    &:first-child{
+      border-radius: 6px 6px 0 0;
+    }
+    &:last-child{
+      border-radius: 0 0 6px 6px;
+    }
+  }
+  // .dropdown-item {
+  //   padding: 0 !important;
+  // }
+}
+
+.downArrow {
+  width: 14px;
+  height: 18px;
+  fill: $heather;
+  position: absolute;
+  right: 12px;
+  cursor: pointer;
+  polyline {
+    stroke: $heather !important;
+  }
+  transition: .5s ease;
+}
+.upArrow {
+  @extend .downArrow;
+  transform: rotate(180deg);
+  transition: .5s ease;
+}

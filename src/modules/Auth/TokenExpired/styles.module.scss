@@ -1,0 +1,48 @@
+@import '../../../scss/variables';
+@import '../../../scss/mixins';
+
+.tokenExpireContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  .messageBox {
+    background-color: $white_15;
+    width: 745px;
+    height: 271px;
+    display: flex;
+    margin-bottom: 10px;
+    position: relative;
+    border: 1px solid rgba(223, 226, 229, 0.52);
+    padding: 56px 75px 78px;
+    .title {
+      @include font_style(24px, #777777, null, null);
+    }
+    .closeBtnArea {
+      width: 90px;
+      position: relative;
+      svg {
+        width: 70px;
+        height: 70px;
+        fill: #f12d2d;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+      }
+    }
+    .description {
+      border-left: 0px;
+      width: calc(100% - 92px);
+      padding-left: 2px;
+      .activeText {
+        padding-top: 15px;
+        padding-bottom: 8px;
+        @include font_style(18px, #777777, $regular, 22px);
+      }
+      .desctiptionTExt {
+        @include font_style(14px, #777777, $regular, 18px);
+      }
+    }
+  }
+}
